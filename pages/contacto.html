@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="../favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon/favicon-16x16.png">
+    <link rel="manifest" href="../favicon/site.webmanifest">
+    <link rel="mask-icon" href="../favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <!-- Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Zen+Antique&display=swap" rel="stylesheet">
+    <!-- CSS-->
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- Font Awesome 5 -->
+    <script src="https://kit.fontawesome.com/f9f34a8a6f.js" crossorigin="anonymous"></script>
+    <!-- Js -->
+    <script defer src="../js/index.js"></script>
+</head>
+<body>
+    <!-- Navbar(top side) -->
+    <header>
+        <div class = "containerNav">
+            <div class = "logo">
+                <img src="../img/logo.png" alt="logo">
+                <h1 class = "logoTitulo">Colecciones Vargas</h1>
+            </div>
+            <div>
+                <nav>
+                    <button class = "navbarTop__toggle" aria-label= "Abrir menú">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                    <ul class = "navbarTop">
+                        <li><a href= "../index.html">Inicio</a></li>
+                        <li><a href= "productos.html">Productos</a></li>
+                        <li><a href= "historia.html">Historia</a></li>
+                        <li><a href= "galeria.html">Galeria</a></li>
+                        <li><a href= "contacto.html">Contacto</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <!-- General Description -->
+    <main>
+        <hr class = "separador color-change-3x">
+        <!-- Intro section -->
+        <section class = "atCliente">
+            <article>
+                <h2>Atención al cliente</h2>
+                <h3>Contacto</h3>
+                <p>Puede comunicarse con nosotros a través de las siguientes vías:
+                    <ul class = "atCliente__lista">
+                        <li>Horario de atención: <br> 8:30 a 18:00 Lunes a Viernes</li>
+                        <li>info@coleccionesvargas.com</li>
+                        <li><a href="#formulario">Formulario</a></li>
+                        <li><a href="https://www.facebook.com/pages/category/Shopping---Retail/Colecciones-Vargas-103493888322560/">Nuestro Facebook</a></li>
+                    </ul>
+                </p>
+            </article>
+        </section>
+        <!-- Contact section -->
+        <section id = "sectContacto">
+            <h3>Formulario</h3>
+            <p>Si desea consultarnos sobre un pedido en curso, por favor informarnos el número de orden del mismo.</p>
+            <!-- Form -->
+            <form action="#" method="get" enctype="text/plain" class="formsContacto">
+                <fieldset>
+                    <legend>Información Personal</legend>
+                    <label for="sexo">Sexo: </label>
+                    <br>
+                    <input type="radio" name="sexo" value= "masculino">Hombre
+                    <input type="radio" name="sexo" value= "femenino">Mujer
+                    <br>
+                    <label for="nombre">Nombre: </label>
+                    <br> 
+                    <input type="text" name="nombre" placeholder="Ingrese su nombre">
+                    <br>
+                    <label for="apellido">Apellido: </label>
+                    <br> 
+                    <input type="text" name="apellido" placeholder="Ingrese su apellido"">
+                    <br>
+                    <label for="emailForm">Email: </label>
+                    <br> 
+                    <input type="email" name="user-email" id="emailForm" placeholder="Ingrese su e-mail">
+                    <br>
+                    <label for="mensaje">Mensaje: </label>
+                    <br> 
+                    <textarea rows = "5" cols="60" name = "user-message" id = "mensaje" placeholder = "Deja tu mensaje"></textarea>
+                    <br><br>
+                    <label for="problemas">Problema: </label>
+                    <select name="user-problem" id="problemas">
+                        <option value="envio"> Envio</option>
+                        <option value="pago"> Pago </option>
+                        <option value="otro"> Otro</option>
+                    </select>
+                    <br><br>
+                    <input type="submit" value= "Enviar">
+                    <input type="reset" value="Reiniciar">
+                </fieldset>
+            </form>
+        </section>
+        <!-- Google maps -->
+        <div class = "containerMap">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.062550760069!2d-58.383688184175014!3d-34.60257976494597!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccacf35440f4b%3A0xceb04ba62f6819e5!2sLavalle%201066%2C%20C1123%20CABA!5e0!3m2!1ses-419!2sar!4v1636946191446!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" class = "mapa"></iframe>
+        </div>
+        <!-- FAQS -->
+        <section id = "sectFAQS">
+            <article>
+                <h2>Preguntas Frecuentes</h2>
+                <h3>¿Venden articulos usados?</h3>
+                <p>Todos los productos que vendemos son nuevos y si bien algunas ediciones pueden tener años, nunca se trata de productos con uso. De operar alguna devolución los mismos deben ser reintegrados en perfecto estado y a través del mecanismo previstos</p>
+                <h3>¿Puedo agregar un producto luego de realizar la compra?</h3>
+                <p>Si el pedido no fue despachado, para agregar un producto a una compra en curso, envíe un e-mail a logistica@coleccionesVargas.com informando el número de compra y el título que desea agregar.</p>
+                <h3>¿Puedo cancelar una compra luego de realizarla?</h3>
+                <p>Para cancelar una compra envíe un e-mail a logistica@coleccionesVargas.com informando el número de compra que quiere cancelar. Si la compra ya hubiera sido enviada, al recibir el paquete debe rechazarlo informando que lo devuelvan al remitente.</p>
+                <h3>¿Cuándo recibiré mi compra?</h3>
+                <p>
+                    Para averiguar en cuánto tiempo recibiré mi compra, debo considerar la salida del depósito (por ejemplo "normalmente salida del depósito en 3 días"), más el tiempo de envío.
+                    <br><br>
+                    La <strong>salida del depósito</strong> es el tiempo que normalmente nos lleva conseguir los libros que ha solicitado, desde el momento en que usted realiza la compra.
+                    <br><br>
+                    El <strong>tiempo de envío</strong> varía en función de la distancia desde nuestro centro de distribución.
+                    <br><br>
+                    Es decir, <strong>salida del depósito + tiempo de envío = tiempo de entrega</strong>
+                    <br><br>
+                    Ejemplo; un producto que tiene salida de depósito normalmente en 3 días hábiles y que se entrega en una provincia o localidad sin medidas sanitarias que imposibiliten la entrada de la empresa postal, espere recibirlo en 10 días hábiles.
+                    <br><br>
+                </p>
+                <!-- Table with shipping times -->
+                <table>
+                    <tr>
+                        <th><b>Localidad</b></th>
+                        <th><b>Tiempo de envío</b></th>
+                    </tr>
+                    <tr>
+                        <td>Capital Federal</td>
+                        <td>2-3 días habiles</td>
+                    </tr>
+                    <tr>
+                        <td>Provincia de Buenos Aires</td>
+                        <td>2-4 días habiles</td>
+                    </tr>
+                    <tr>
+                        <td>Resto del País</td>
+                        <td>3-5 días habiles</td>
+                    </tr>
+                </table>
+                <h3>¿Tengo que pagar algún impuesto para compras fuera de Argentina?</h3>
+                <p>Para compras fuera de Argentina, los cargos en el país de destino por retiro de Aduana o impuestos aduaneros son responsabilidad del cliente y pueden 
+                    variar de país en país. Recomendamos contactar la oficina de Aduanas local de su país para obtener información de posibles cargos por los conceptos
+                    mencionados.
+                </p>
+                <h2>Devoluciones y/o cambios</h2>
+                <p>
+                    A partir de la recepción del paquete, usted cuenta con 10 días corridos para poder realizar cambios o devoluciones.
+                    <br><br>
+                    Si tu pedido contiene material agotado o faltante, reintegraremos el dinero por el mismo medio que abonaste y sobre la misma orden de pago (Sin excepciones).
+                    <br><br>
+                    Para solicitar los cambios o devoluciones, puede contactarse por e-mail a logistica@coleccionesVargas.com
+                    <br><br>
+                    - número de pedido
+                    <br><br>
+                    - motivo del cambio o devolución
+                    <br><br>
+                    - título del libro o producto
+                    <br>
+                    Le informaremos por e-mail la manera de realizar el cambio o devolución.
+                    <br><br>
+                    La dirección de envío para cambios y devoluciones es:
+                    <br><br>
+                    1066 Lavalle, Microcentro, Ciudad Autónoma de Buenos Aires, Argentina
+                </p>
+            </article>
+        </section>
+        <!-- Privacy Policies -->
+        <section id = "sectPriv">
+            <h2>Políticas de Privacidad</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem est sed molestias dicta enim ipsa pariatur ad porro maxime totam!
+                Iusto alias sunt necessitatibus numquam eligendi ab, maxime expedita inventore nulla at doloribus sapiente explicabo quaerat veniam dicta 
+                consequuntur quidem saepe, asperiores, nobis hic corrupti id. Cupiditate dolorum possimus ab, voluptate debitis, quo animi 
+                totam non repellat placeat modi recusandae?
+            </p>
+        </section>
+    </main>
+    <!-- Aside-->
+        <!-- Subscripcion Area-->
+        <aside class= "subscripcion">
+            <!-- Subscripcion Tittle-->
+            <div class="subscripcion__txt">
+                <h4 class="subscripcion-titulo">ENTERATE DE LAS ULTIMAS NOVEDADES</h4>
+            </div>
+            <!-- Subscripcion mail input-->
+            <div class= "subscripcion__forms">
+                <div class="forms">
+                    <form>
+                        <label for="suscripcionEmail">
+                        <input name="suscripcionEmail" type="email" class="subscripcion__forms--email" placeholder="Tu email"/>
+                        </label>
+                        <label for="suscripcionBoton">
+                        <input id= "suscripcionBoton" type="submit" value="Enviar"/>
+                        </label>
+                        <br>
+                        <label for="aceptaTerminos">
+                        <input class = "btnCheck" name="aceptaTerminos" type="checkbox" value="1" >Acepto los términos y condiciones
+                        </label>
+                    </form>
+                </div>
+            </div>
+        </aside>
+        <!-- Footer -->
+        <footer>
+            <div>
+                <!-- Navbar(buttom side)-->
+                <nav>
+                    <ul class = "navbarBot">
+                        <!-- Nav list-->
+                        <ul>
+                            <li><a href="#" target="_self">NAVEGACIÓN</a></li>
+                            <li><a href= "productos.html#contenedorA">Albumes</a></li>
+                            <li><a href= "productos.html#contenedorB">Figuras</a></li>
+                            <li><a href= "productos.html#contenedorC">Mangas</a></li>
+                            <li><a href= "productos.html#contenedorD">Cartas</a></li>
+                            <li><a href= "productos.html#contenedorE">Tazos</a></li>
+                            <li><a href= "productos.html#contenedorF">Juguetes</a></li>
+                        </ul>
+                        <!-- History list-->
+                        <ul>
+                            <li><a href="#" target="_self">NOSOTROS</a></li>
+                            <li><a href= "historia.html">Historia</a></li>
+                            <li><a href= "galeria.html">Local</a></li>
+                        </ul>
+                        <!-- Contact list-->
+                        <ul>
+                            <li><a href="#" target="_self">ATENCIÓN AL CLIENTE</a></li>
+                            <li><a href= "#sectContacto">Contacto</a></li>
+                            <li><a href= "#sectPriv">Politicas de privacidad</a></li>
+                            <li><a href= "#sectFAQS">FAQS</a></li>
+                        </ul>
+                        <!-- Social media-->
+                        <ul>
+                            <li><a href="#" target="_self">SEGUINOS</a></li>
+                            <div class = "containerSocial">
+                                <li><a href= "#"><img class = "social" src="../img/iconoIg.png" alt="Instagram"></a></li>
+                                <li><a href= "https://www.facebook.com/pages/category/Shopping---Retail/Colecciones-Vargas-103493888322560/"><img class = "social" src="../img/iconoFb.png" alt="Facebook"></a></li>
+                                <li><a href= "#"><img class = "social" src="../img/iconoTw.png" alt="Twitter"></a></li>
+                            </div>
+                        </ul>
+                    </ul>
+                </nav>
+            </div>
+            <!-- Copyright-->
+            <div class = "containerCopyright">
+                <p>COPYRIGHT © 2021 COLECCIONES VARGAS</p>
+            </div>
+        </footer>
+</body>
+</html>
