@@ -99,36 +99,35 @@ header{
 
 footer{
     background-color: black;
-    width: max;
     grid-area: footer;
-    height: 42vh;
-    bottom: 0;
-
 }
 
 .navbarBot{
-    width:max;
     display:grid;
-    height:30vh;
+    height: auto;
     grid-column: repeat(4, auto);
     grid-row: 1fr;
     grid-template-areas: "navegacion nosotros atencion_al_cliente seguinos";
 }
 
-#navegacion{
+.navegacion{
     grid-area: navegacion;
+    text-align: center;
 }
 
-#nosotros{
+.nosotros{
     grid-area: nosotros;
+    text-align: center;
 }
 
-#atencion_al_cliente{
+.atencion_al_cliente{
     grid-area: atencion_al_cliente;
+    text-align: center;
 }
 
-#seguinos{
+.seguinos{
     grid-area: seguinos;
+    text-align: center;
 }
 
 .navbarBot ul {
@@ -148,11 +147,15 @@ footer{
     color: #15AFC6;
 }
 
+.containerLinks{
+    text-align: center;
+}
+
 /* Social Media */
 .containerSocial{
     display:flex;
     flex-direction: row;
-    justify-content: left;
+    justify-content: center;
 }
 .social{
     display: inline-block;
@@ -164,33 +167,33 @@ footer{
 /* Copyright */
 
 .containerCopyright{
-    width: max;
-    height: 100px;
+    height: 3rem;
     width: 100%;
     bottom: 0;
 }
 
 .containerCopyright p{
     padding-left:60px;
-    padding-top: 80px;
+    padding-top: 15px;
     color:white;
     text-align: left;
 }
 
 /* General */
 
+body{
+    background-color: #3D3C65;
+}
+
 ul{
     list-style: none;
 }
-
-
 
 form{
     color:white;
 }
 
-body{
-    background-color: #3D3C65;
+.grid{
     display: grid;
     height: 100vh;
     grid-row: 15% auto 15% 20%;
@@ -428,6 +431,19 @@ ul li a{
 	padding-top: 25px;
 }
 
+#sectFAQS article h2{
+    margin: 2rem 0;
+}
+
+#sectFAQS article h3{
+    margin: 2rem 0;
+}
+
+#sectPriv {
+    margin: 2rem 0;
+}
+
+
 .formsContacto{
     display: inline-block;
     margin-left: auto;
@@ -589,5 +605,13 @@ table tr th{
 
     .containerGallery__col{
         justify-content: center;
+    }
+}
+
+/* Mobile S 320 x 854 px*/
+
+@media (max-width: 320px) {
+    footer{
+        height: 145vh;
     }
 }

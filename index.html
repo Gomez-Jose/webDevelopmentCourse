@@ -25,126 +25,134 @@
     <script defer src="js/index.js"></script>
 </head>
 <body>
-    <!-- Navbar(top side) -->
-    <header>
-        <div class = "containerNav">
-            <div class = "logo">
-                <img src="img/logo.png" alt="logo">
-                <h1 class = "logoTitulo">Colecciones Vargas</h1>
+    <div class="grid">
+        <!-- Navbar(top side) -->
+        <header>
+            <div class = "containerNav">
+                <div class = "logo">
+                    <img src="img/logo.png" alt="logo">
+                    <h1 class = "logoTitulo">Colecciones Vargas</h1>
+                </div>
+                <div>
+                    <nav>
+                        <button class = "navbarTop__toggle" aria-label= "Abrir menú">
+                            <i class="fas fa-bars"></i>
+                        </button>
+                        <ul class = "navbarTop">
+                            <li><a href= "#">Inicio</a></li>
+                            <li><a href= "pages/productos.html">Productos</a></li>
+                            <li><a href= "pages/historia.html">Historia</a></li>
+                            <li><a href= "pages/galeria.html">Galeria</a></li>
+                            <li><a href= "pages/contacto.html">Contacto</a></li>
+                        </ul>
+                    </nav>
+                </div>
             </div>
-            <div>
+        </header>
+        <!-- Main Section-->
+        <main>
+            <hr class = "separador color-change-3x">
+            <!-- Hero Section-->
+            <section class = "hero">
+                <div class = "containerHero">
+                    <div class = "banner">
+                        <img src="img/banner1.jpeg" alt="banner">
+                    </div>
+                </div>
+            </section>
+            <!-- Video and text-->
+            <div class="main__contenedor">
+                <div class = "main__video">
+                    <iframe id="videoYT" width="560" height="315" src="https://www.youtube.com/embed/DudpSXV4KxU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <div class = "main__txt">
+                        <h2>Apertura del local</h2>
+                        <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea expedita inventore ad, temporibus quo ipsum rem tempore perferendis minima illo non maxime iusto.
+                                Dolorem earum libero accusamus, laudantium quae eius. Id qui obcaecati, numquam saepe nostrum recusandae voluptate ipsa voluptatum autem labore reiciendis! 
+                                Eveniet aliquid omnis magnam, saepe rem modi accusamus, hic impedit neque ut minima nostrum! 
+                                Tempora harum aliquid aperiam libero ducimus dolor recusandae adipisci repellendus. Esse, hic nobis distinctio nemo optio fugit dignissimos nisi accusamus repellendus est odio!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <!-- Aside-->
+        <!-- Subscripcion Area-->
+        <aside class= "subscripcion">
+            <!-- Subscripcion Tittle-->
+            <div class="subscripcion__txt">
+                <h4 class="subscripcion-titulo">ENTERATE DE LAS ULTIMAS NOVEDADES</h4>
+            </div>
+            <!-- Subscripcion mail input-->
+            <div class= "subscripcion__forms">
+                <div class="forms">
+                    <form>
+                        <label for="suscripcionEmail">
+                        <input name="suscripcionEmail" type="email" class="subscripcion__forms--email" placeholder="Tu email"/>
+                        </label>
+                        <label for="suscripcionBoton">
+                        <input id= "suscripcionBoton" type="submit" value="Enviar"/>
+                        </label>
+                        <br>
+                        <label for="aceptaTerminos">
+                        <input class = "btnCheck" name="aceptaTerminos" type="checkbox" value="1" >Acepto los términos y condiciones
+                        </label>
+                    </form>
+                </div>
+            </div>
+        </aside>
+        <!-- Footer -->
+        <footer>
+            <div >
+                <!-- Navbar(buttom side)-->
                 <nav>
-                    <button class = "navbarTop__toggle" aria-label= "Abrir menú">
-                        <i class="fas fa-bars"></i>
-                    </button>
-                    <ul class = "navbarTop">
-                        <li><a href= "#">Inicio</a></li>
-                        <li><a href= "pages/productos.html">Productos</a></li>
-                        <li><a href= "pages/historia.html">Historia</a></li>
-                        <li><a href= "pages/galeria.html">Galeria</a></li>
-                        <li><a href= "pages/contacto.html">Contacto</a></li>
+                    <ul class = "navbarBot">
+                        <!-- Nav list-->
+                        <ul>
+                            <li class = "navegacion"><a href="#" target="_self">NAVEGACIÓN</a></li>
+                            <div class="containerLinks">
+                                <li><a href= "pages/productos.html#contenedorA">Albumes</a></li>
+                                <li><a href= "pages/productos.html#contenedorB">Figuras</a></li>
+                                <li><a href= "pages/productos.html#contenedorC">Mangas</a></li>
+                                <li><a href= "pages/productos.html#contenedorD">Cartas</a></li>
+                                <li><a href= "pages/productos.html#contenedorE">Tazos</a></li>
+                                <li><a href= "pages/productos.html#contenedorF">Juguetes</a></li>
+                            </div>
+                        </ul>
+                        <!-- History list-->
+                        <ul>
+                            <li class = "nosotros"><a href="#" target="_self">NOSOTROS</a></li>
+                            <div class="containerLinks">
+                                <li><a href= "pages/historia.html">Historia</a></li>
+                                <li><a href= "pages/galeria.html">Local</a></li>
+                            </div>
+                        </ul>
+                        <!-- Contact list-->
+                        <ul>
+                            <li class = "atencion_al_cliente"><a href="#" target="_self">ATENCIÓN AL CLIENTE</a></li>
+                            <div class="containerLinks">
+                                <li><a href= "pages/contacto.html#sectContacto">Contacto</a></li>
+                                <li><a href= "pages/contacto.html#sectPriv">Politicas de privacidad</a></li>
+                                <li><a href= "pages/contacto.html#sectFAQS">FAQS</a></li>
+                            </div>
+                        </ul>
+                        <!-- Social media-->
+                        <ul>
+                            <li class = "seguinos"><a href="#" target="_self">SEGUINOS</a></li>
+                            <div class = "containerSocial">
+                                <li><a href= "#"><img class = "social" src="img/iconoIg.png" alt="Instagram"></a></li>
+                                <li><a href= "https://www.facebook.com/pages/category/Shopping---Retail/Colecciones-Vargas-103493888322560/"><img class = "social" src="img/iconoFb.png" alt="Facebook"></a></li>
+                                <li><a href= "#"><img class = "social" src="img/iconoTw.png" alt="Twitter"></a></li>
+                            </div>
+                        </ul>
                     </ul>
                 </nav>
             </div>
-        </div>
-    </header>
-    <!-- Main Section-->
-    <main>
-        <hr class = "separador color-change-3x">
-        <!-- Hero Section-->
-        <section class = "hero">
-            <div class = "containerHero">
-                <div class = "banner">
-                    <img src="img/banner1.jpeg" alt="banner">
-                </div>
+            <!-- Copyright-->
+            <div class = "containerCopyright">
+                <p>COPYRIGHT © 2021 COLECCIONES VARGAS</p>
             </div>
-        </section>
-        <!-- Video and text-->
-        <div class="main__contenedor">
-            <div class = "main__video">
-                <iframe id="videoYT" width="560" height="315" src="https://www.youtube.com/embed/DudpSXV4KxU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                <div class = "main__txt">
-                    <h2>Apertura del local</h2>
-                    <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea expedita inventore ad, temporibus quo ipsum rem tempore perferendis minima illo non maxime iusto.
-                            Dolorem earum libero accusamus, laudantium quae eius. Id qui obcaecati, numquam saepe nostrum recusandae voluptate ipsa voluptatum autem labore reiciendis! 
-                            Eveniet aliquid omnis magnam, saepe rem modi accusamus, hic impedit neque ut minima nostrum! 
-                            Tempora harum aliquid aperiam libero ducimus dolor recusandae adipisci repellendus. Esse, hic nobis distinctio nemo optio fugit dignissimos nisi accusamus repellendus est odio!
-                    </p>
-                </div>
-            </div>
-        </div>
-    </main>
-    <!-- Aside-->
-    <!-- Subscripcion Area-->
-    <aside class= "subscripcion">
-        <!-- Subscripcion Tittle-->
-        <div class="subscripcion__txt">
-            <h4 class="subscripcion-titulo">ENTERATE DE LAS ULTIMAS NOVEDADES</h4>
-        </div>
-        <!-- Subscripcion mail input-->
-        <div class= "subscripcion__forms">
-            <div class="forms">
-                <form>
-                    <label for="suscripcionEmail">
-                    <input name="suscripcionEmail" type="email" class="subscripcion__forms--email" placeholder="Tu email"/>
-                    </label>
-                    <label for="suscripcionBoton">
-                    <input id= "suscripcionBoton" type="submit" value="Enviar"/>
-                    </label>
-                    <br>
-                    <label for="aceptaTerminos">
-                    <input class = "btnCheck" name="aceptaTerminos" type="checkbox" value="1" >Acepto los términos y condiciones
-                    </label>
-                </form>
-            </div>
-        </div>
-    </aside>
-    <!-- Footer -->
-    <footer>
-        <div >
-            <!-- Navbar(buttom side)-->
-            <nav>
-                <ul class = "navbarBot">
-                    <!-- Nav list-->
-                    <ul>
-                        <li class = "navegacion"><a href="#" target="_self">NAVEGACIÓN</a></li>
-                        <li><a href= "pages/productos.html#contenedorA">Albumes</a></li>
-                        <li><a href= "pages/productos.html#contenedorB">Figuras</a></li>
-                        <li><a href= "pages/productos.html#contenedorC">Mangas</a></li>
-                        <li><a href= "pages/productos.html#contenedorD">Cartas</a></li>
-                        <li><a href= "pages/productos.html#contenedorE">Tazos</a></li>
-                        <li><a href= "pages/productos.html#contenedorF">Juguetes</a></li>
-                    </ul>
-                    <!-- History list-->
-                    <ul>
-                        <li id = "nosotros"><a href="#" target="_self">NOSOTROS</a></li>
-                        <li><a href= "pages/historia.html">Historia</a></li>
-                        <li><a href= "pages/galeria.html">Local</a></li>
-                    </ul>
-                    <!-- Contact list-->
-                    <ul>
-                        <li id = "atencion_al_cliente"><a href="#" target="_self">ATENCIÓN AL CLIENTE</a></li>
-                        <li><a href= "pages/contacto.html#sectContacto">Contacto</a></li>
-                        <li><a href= "pages/contacto.html#sectPriv">Politicas de privacidad</a></li>
-                        <li><a href= "pages/contacto.html#sectFAQS">FAQS</a></li>
-                    </ul>
-                    <!-- Social media-->
-                    <ul>
-                        <li id = "seguinos"><a href="#" target="_self">SEGUINOS</a></li>
-                        <div class = "containerSocial">
-                            <li><a href= "#"><img class = "social" src="img/iconoIg.png" alt="Instagram"></a></li>
-                            <li><a href= "https://www.facebook.com/pages/category/Shopping---Retail/Colecciones-Vargas-103493888322560/"><img class = "social" src="img/iconoFb.png" alt="Facebook"></a></li>
-                            <li><a href= "#"><img class = "social" src="img/iconoTw.png" alt="Twitter"></a></li>
-                        </div>
-                    </ul>
-                </ul>
-            </nav>
-        </div>
-        <!-- Copyright-->
-        <div class = "containerCopyright">
-            <p>COPYRIGHT © 2021 COLECCIONES VARGAS</p>
-        </div>
-    </footer>
+        </footer>
+    </div>
 </body>
 </html>

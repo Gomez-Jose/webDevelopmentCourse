@@ -25,110 +25,118 @@
     <script defer src="../js/index.js"></script>
 </head>
 <body>
-    <!-- Navbar(top side) -->
-    <header>
-        <div class = "containerNav">
-            <div class = "logo">
-                <img src="../img/logo.png" alt="logo">
-                <h1 class = "logoTitulo">Colecciones Vargas</h1>
-            </div>
-            <div>
-                <nav>
-                    <button class = "navbarTop__toggle" aria-label= "Abrir menú">
-                        <i class="fas fa-bars"></i>
-                    </button>
-                    <ul class = "navbarTop">
-                        <li><a href= "../index.html">Inicio</a></li>
-                        <li><a href= "productos.html">Productos</a></li>
-                        <li><a href= "historia.html">Historia</a></li>
-                        <li><a href= "galeria.html">Galeria</a></li>
-                        <li><a href= "contacto.html">Contacto</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </div>
-    </header>
-    <!-- Main Section -->
-    <main>
-        <hr class = "separador color-change-3x">
-        <div class = "containerHistory">
-            <article class = "main__article">
-                <h2>Sobre Nosotros</h2>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda, natus cumque. Nisi corporis quos a? Quibusdam molestias modi aspernatur autem quos minus voluptates explicabo id optio, quae ratione laboriosam ad cupiditate quia harum similique nulla beatae eveniet voluptatem? Fugit, fugiat asperiores. Atque deleniti, odit, corrupti est dicta animi hic ipsa autem debitis quam sapiente in ratione iusto quisquam tempore repellat. Placeat ullam laudantium, recusandae illo possimus, quos, rerum tenetur eveniet porro adipisci accusamus consequatur ipsa illum perferendis voluptatibus quae ratione id quis reiciendis minus sapiente nemo nulla non sequi? Dolores possimus animi maxime eaque quis adipisci voluptate voluptatem, exercitationem eius ab in excepturi saepe? Fuga perferendis soluta sunt quisquam cumque omnis necessitatibus aliquid nobis blanditiis impedit et, tempore minima sapiente sequi molestias reprehenderit fugiat, autem cum delectus aspernatur nesciunt illo veritatis distinctio. Repellat aliquam consequuntur sint? Dolore ducimus veniam nesciunt totam dolorum, reiciendis consectetur inventore nam obcaecati repellat cum vitae.</p>
-            </article>
-            <img class = "main__historyPhoto" src="../img/historyPhoto.jpg" alt="historyPhoto">
-        </div>
-    </main>
-    <!-- Aside-->
-    <!-- Subscripcion Area-->
-    <aside class= "subscripcion">
-        <!-- Subscripcion Tittle-->
-        <div class="subscripcion__txt">
-            <h4 class="subscripcion-titulo">ENTERATE DE LAS ULTIMAS NOVEDADES</h4>
-        </div>
-        <!-- Subscripcion mail input-->
-            <div class= "subscripcion__forms">
-                <div class="forms">
-                    <form>
-                        <label for="suscripcionEmail">
-                        <input name="suscripcionEmail" type="email" class="subscripcion__forms--email" placeholder="Tu email"/>
-                        </label>
-                        <label for="suscripcionBoton">
-                        <input id= "suscripcionBoton" type="submit" value="Enviar"/>
-                        </label>
-                        <br>
-                        <label for="aceptaTerminos">
-                        <input class = "btnCheck" name="aceptaTerminos" type="checkbox" value="1" >Acepto los términos y condiciones
-                        </label>
-                    </form>
+    <div class="grid">
+        <!-- Navbar(top side) -->
+        <header>
+            <div class = "containerNav">
+                <div class = "logo">
+                    <img src="../img/logo.png" alt="logo">
+                    <h1 class = "logoTitulo">Colecciones Vargas</h1>
+                </div>
+                <div>
+                    <nav>
+                        <button class = "navbarTop__toggle" aria-label= "Abrir menú">
+                            <i class="fas fa-bars"></i>
+                        </button>
+                        <ul class = "navbarTop">
+                            <li><a href= "../index.html">Inicio</a></li>
+                            <li><a href= "productos.html">Productos</a></li>
+                            <li><a href= "historia.html">Historia</a></li>
+                            <li><a href= "galeria.html">Galeria</a></li>
+                            <li><a href= "contacto.html">Contacto</a></li>
+                        </ul>
+                    </nav>
                 </div>
             </div>
-    </aside>
-        <!-- Footer -->
-        <footer>
-            <div >
-                <!-- Navbar(buttom side)-->
-                <nav>
-                    <ul class = "navbarBot">
-                        <!-- Nav list-->
-                        <ul>
-                            <li><a href="#" target="_self">NAVEGACIÓN</a></li>
-                            <li><a href= "productos.html#contenedorA">Albumes</a></li>
-                            <li><a href= "productos.html#contenedorB">Figuras</a></li>
-                            <li><a href= "productos.html#contenedorC">Mangas</a></li>
-                            <li><a href= "productos.html#contenedorD">Cartas</a></li>
-                            <li><a href= "productos.html#contenedorE">Tazos</a></li>
-                            <li><a href= "productos.html#contenedorF">Juguetes</a></li>
-                        </ul>
-                        <!-- History list-->
-                        <ul>
-                            <li><a href="#" target="_self">NOSOTROS</a></li>
-                            <li><a href= "historia.html">Historia</a></li>
-                            <li><a href= "galeria.html">Local</a></li>
-                        </ul>
-                        <!-- Contact list-->
-                        <ul>
-                            <li><a href="#" target="_self">ATENCIÓN AL CLIENTE</a></li>
-                            <li><a href= "contacto.html#sectContacto">Contacto</a></li>
-                            <li><a href= "contacto.html#sectPriv">Politicas de privacidad</a></li>
-                            <li><a href= "contacto.html#sectFAQS">FAQS</a></li>
-                        </ul>
-                        <!-- Social media-->
-                        <ul>
-                            <li><a href="#" target="_self">SEGUINOS</a></li>
-                            <div class = "containerSocial">
-                                <li><a href= "#"><img class = "social" src="../img/iconoIg.png" alt="Instagram"></a></li>
-                                <li><a href= "https://www.facebook.com/pages/category/Shopping---Retail/Colecciones-Vargas-103493888322560/"><img class = "social" src="../img/iconoFb.png" alt="Facebook"></a></li>
-                                <li><a href= "#"><img class = "social" src="../img/iconoTw.png" alt="Twitter"></a></li>
-                            </div>
-                        </ul>
-                    </ul>
-                </nav>
+        </header>
+        <!-- Main Section -->
+        <main>
+            <hr class = "separador color-change-3x">
+            <div class = "containerHistory">
+                <article class = "main__article">
+                    <h2>Sobre Nosotros</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda, natus cumque. Nisi corporis quos a? Quibusdam molestias modi aspernatur autem quos minus voluptates explicabo id optio, quae ratione laboriosam ad cupiditate quia harum similique nulla beatae eveniet voluptatem? Fugit, fugiat asperiores. Atque deleniti, odit, corrupti est dicta animi hic ipsa autem debitis quam sapiente in ratione iusto quisquam tempore repellat. Placeat ullam laudantium, recusandae illo possimus, quos, rerum tenetur eveniet porro adipisci accusamus consequatur ipsa illum perferendis voluptatibus quae ratione id quis reiciendis minus sapiente nemo nulla non sequi? Dolores possimus animi maxime eaque quis adipisci voluptate voluptatem, exercitationem eius ab in excepturi saepe? Fuga perferendis soluta sunt quisquam cumque omnis necessitatibus aliquid nobis blanditiis impedit et, tempore minima sapiente sequi molestias reprehenderit fugiat, autem cum delectus aspernatur nesciunt illo veritatis distinctio. Repellat aliquam consequuntur sint? Dolore ducimus veniam nesciunt totam dolorum, reiciendis consectetur inventore nam obcaecati repellat cum vitae.</p>
+                </article>
+                <img class = "main__historyPhoto" src="../img/historyPhoto.jpg" alt="historyPhoto">
             </div>
-            <!-- Copyright-->
-            <div class = "containerCopyright">
-                <p>COPYRIGHT © 2021 COLECCIONES VARGAS</p>
+        </main>
+        <!-- Aside-->
+        <!-- Subscripcion Area-->
+        <aside class= "subscripcion">
+            <!-- Subscripcion Tittle-->
+            <div class="subscripcion__txt">
+                <h4 class="subscripcion-titulo">ENTERATE DE LAS ULTIMAS NOVEDADES</h4>
             </div>
-        </footer>
+            <!-- Subscripcion mail input-->
+                <div class= "subscripcion__forms">
+                    <div class="forms">
+                        <form>
+                            <label for="suscripcionEmail">
+                            <input name="suscripcionEmail" type="email" class="subscripcion__forms--email" placeholder="Tu email"/>
+                            </label>
+                            <label for="suscripcionBoton">
+                            <input id= "suscripcionBoton" type="submit" value="Enviar"/>
+                            </label>
+                            <br>
+                            <label for="aceptaTerminos">
+                            <input class = "btnCheck" name="aceptaTerminos" type="checkbox" value="1" >Acepto los términos y condiciones
+                            </label>
+                        </form>
+                    </div>
+                </div>
+        </aside>
+            <!-- Footer -->
+            <footer>
+                <div >
+                    <!-- Navbar(buttom side)-->
+                    <nav>
+                        <ul class = "navbarBot">
+                            <!-- Nav list-->
+                            <ul>
+                                <li class = "navegacion"><a href="#" target="_self">NAVEGACIÓN</a></li>
+                                <div class="containerLinks">
+                                    <li><a href= "productos.html#contenedorA">Albumes</a></li>
+                                    <li><a href= "productos.html#contenedorB">Figuras</a></li>
+                                    <li><a href= "productos.html#contenedorC">Mangas</a></li>
+                                    <li><a href= "productos.html#contenedorD">Cartas</a></li>
+                                    <li><a href= "productos.html#contenedorE">Tazos</a></li>
+                                    <li><a href= "productos.html#contenedorF">Juguetes</a></li>
+                                </div>
+                            </ul>
+                            <!-- History list-->
+                            <ul>
+                                <li class = "nosotros"><a href="#" target="_self">NOSOTROS</a></li>
+                                <div class="containerLinks">
+                                    <li><a href= "historia.html">Historia</a></li>
+                                    <li><a href= "galeria.html">Local</a></li>
+                                </div>
+                            </ul>
+                            <!-- Contact list-->
+                            <ul>
+                                <li class= "atencion_al_cliente"><a href="#" target="_self">ATENCIÓN AL CLIENTE</a></li>
+                                <div class="containerLinks">
+                                    <li><a href= "contacto.html#sectContacto">Contacto</a></li>
+                                    <li><a href= "contacto.html#sectPriv">Politicas de privacidad</a></li>
+                                    <li><a href= "contacto.html#sectFAQS">FAQS</a></li>
+                                </div>
+                            </ul>
+                            <!-- Social media-->
+                            <ul>
+                                <li class= "seguinos"><a href="#" target="_self">SEGUINOS</a></li>
+                                <div class = "containerSocial">
+                                    <li><a href= "#"><img class = "social" src="../img/iconoIg.png" alt="Instagram"></a></li>
+                                    <li><a href= "https://www.facebook.com/pages/category/Shopping---Retail/Colecciones-Vargas-103493888322560/"><img class = "social" src="../img/iconoFb.png" alt="Facebook"></a></li>
+                                    <li><a href= "#"><img class = "social" src="../img/iconoTw.png" alt="Twitter"></a></li>
+                                </div>
+                            </ul>
+                        </ul>
+                    </nav>
+                </div>
+                <!-- Copyright-->
+                <div class = "containerCopyright">
+                    <p>COPYRIGHT © 2021 COLECCIONES VARGAS</p>
+                </div>
+            </footer>
+        </div>
 </body>
 </html>
