@@ -2,6 +2,9 @@
 
 This is my very first development project ever. Made for [**Coderhouse's Web Development Course**](https://www.coderhouse.com/online/desarrollo-web-online) in 2021.
 
+## Check out the website!
+https://gomez-jose.github.io/webDevelopmentCourse/
+
 ---
 
 ## About the Project
