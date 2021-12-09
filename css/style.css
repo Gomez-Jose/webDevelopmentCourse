@@ -7,7 +7,6 @@
 
 body{
     height: 100vh;
-    width:100vw;
     background-color: #3D3C65;
 
 }
@@ -29,7 +28,7 @@ body{
 header{
     background-color: black;
     height: 100px;
-    width:100vw;
+    max-width:100%;
     top: 0;
     grid-area: header;
 }
@@ -122,7 +121,6 @@ header{
 
 footer{
     background-color: black;
-    width: 100vw;
     height: max-content;
     grid-area: footer;
 }
@@ -130,7 +128,6 @@ footer{
 .navbarBot{
     display:grid;
     height: 90%;
-    width: 100vw;
     grid-column: repeat(4, auto);
     grid-row: 1fr;
     grid-template-areas: "navegacion nosotros atencion_al_cliente seguinos";
@@ -215,12 +212,10 @@ form{
 }
 
 main{
-    width: 100vw;
     grid-area: main;
 }
 
 aside{
-    width: 100vw;
     grid-area: aside;
 }
 
@@ -308,7 +303,6 @@ ul li a{
 /* Index */
 
 .banner{
-    width: 100vw;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -369,7 +363,6 @@ ul li a{
 
 .containerItem img{
     width: 300px;
-    max-width: 95vw;
     height: 300px;
     margin-top: 10px;
     padding: 14px;
@@ -512,6 +505,14 @@ table tr th{
 }
 
 /* MEDIA QUERIES */
+/* Img in productos 1372 x 854 px*/
+@media (max-width: 1372px){
+    .containerItem img{
+        width: 200px;
+        height: 200px;
+    }
+}
+
 /* Laptop Device 1024 x 854 px*/
 @media (max-width: 1024px) {
 
@@ -553,6 +554,12 @@ table tr th{
         flex-wrap:wrap;
     }
 
+    .containerItem img{
+        width: 300px;
+        height: 300px;
+    }
+
+
 }
 /* Media Querie navbar Bot */
 @media (max-width: 1205px) { 
@@ -579,7 +586,6 @@ table tr th{
 
     .containerNav{
         align-items: flex-start;
-        width: 100vw;
     }
 
     .logo img, .logo h1{
@@ -661,13 +667,7 @@ table tr th{
     }
 
     .containerGallery__col img{
-        max-width: 95vw;
         filter:none;
-    }
-
-    /* Contacto */
-    .mapa{
-        max-width: 100vw;
     }
 
 }
@@ -687,6 +687,8 @@ table tr th{
         font-size: 1.6rem;
     }
 }
+
+/* Media Querie for logo when screen is too small px*/
 
 @media (max-width: 285px) {
     .logo h1{
