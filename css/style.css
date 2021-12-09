@@ -130,6 +130,7 @@ footer{
 .navbarBot{
     display:grid;
     height: 90%;
+    width: 100vw;
     grid-column: repeat(4, auto);
     grid-row: 1fr;
     grid-template-areas: "navegacion nosotros atencion_al_cliente seguinos";
@@ -553,6 +554,20 @@ table tr th{
     }
 
 }
+/* Media Querie navbar Bot */
+@media (max-width: 1205px) { 
+    .navbarBot ul{
+        margin: auto;
+    }
+}
+
+/* Logo Text */
+@media (max-width: 870px) { 
+    .logo h1{
+        visibility:hidden;
+    }
+}
+
 
 /* Tablet Device 768 x 882 px*/
 @media (max-width: 768px) {
@@ -572,6 +587,10 @@ table tr th{
         line-height: 50px;
         justify-content: center;
         margin-left:0;
+    }
+
+    .logo h1{
+        visibility:visible;
     }
 
     .logoTitulo{
