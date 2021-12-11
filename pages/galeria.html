@@ -54,30 +54,49 @@
         <!-- Main Section -->
         <main>
             <hr class = "separador color-change-3x">
-            <section class = "main__gallery">
-                <div class = "containerGallery"> 
-                    <div class="containerGallery__txt">
-                        <h2> Galería por fuera</h2>
+            <div class="container">
+                <div class="row justify-content-start">
+                    <div class="col-2">
+                        <div id="contentPlaceHolderIzquierda" class="col-md-12">
+                            <h5 class="tituloBuscador">Buscador</h5>
+                            <nav id="contentPlaceHolderIzquierda_contenedorBuscadorG" class="nav_buscador-categorias">
+                                <h6 class="tituloCategoria">Categoría</h6>
+                                <hr>
+                                <ul id="contentPlaceHolderIzquierda_contenedorBuscador_buscadorTema1" class="buscador_categorias">
+                                    <li id="contentPlaceHolderIzquierda_contenedorBuscador_buscadorTema1_tema1_a" ><a href="#contenedorGaleria1" class=" level1">POR FUERA <span>(2)</span> </a></li>
+                                    <li id="contentPlaceHolderIzquierda_contenedorBuscador_buscadorTema1_tema1_b" ><a href="#contenedorGaleria2" class= "level1">POR DENTRO <span>(4)</span> </a></li>
+                                </ul>
+                            </nav>
+                        </div>
                     </div>
-                    <div class = "containerGallery__col">
-                        <img class = "imgGenerica" src="../img/fuera1.jpeg" alt="outsidePhoto1">
-                        <img class = "imgGenerica" src="../img/fuera2.jpeg" alt="outisdePhoto2">
+                    <div class="col-10">
+                        <section class = "main__gallery">
+                            <div id = "contenedorGaleria1" class = "containerGallery"> 
+                                <div class="containerGallery__txt">
+                                    <h2> Galería por fuera</h2>
+                                </div>
+                                <div class = "containerGallery__col">
+                                    <img class = "imgGenerica" src="../img/fuera1.jpeg" alt="outsidePhoto1">
+                                    <img class = "imgGenerica" src="../img/fuera2.jpeg" alt="outisdePhoto2">
+                                </div>
+                            </div>
+                            <div id = "contenedorGaleria2" class = "containerGallery"> 
+                                <div class="containerGallery__txt">
+                                    <h2>Galería por dentro</h2>
+                                </div>
+                                <div class = "containerGallery__col">
+                                    <img class = "imgGenerica" src="../img/dentro1.jpeg" alt="insidePhoto1">
+                                    <img class = "imgGenerica" src="../img/dentro2.jpeg" alt="insidePhoto2">
+                                    <img class = "imgGenerica" src="../img/dentro3.jpeg" alt="insidePhoto3">
+                                    <img class = "imgGenerica" src="../img/dentro4.jpeg" alt="insidePhoto4">
+                                    <img class = "imgGenerica" src="../img/dentro5.jpeg" alt="insidePhoto5">
+                                    <img class = "imgGenerica" src="../img/dentro6.jpeg" alt="insidePhoto6">
+                                </div>
+                            </div>
+                        </section>
                     </div>
                 </div>
-                <div class = "containerGallery"> 
-                    <div class="containerGallery__txt">
-                        <h2>Galería por dentro</h2>
-                    </div>
-                    <div class = "containerGallery__col">
-                        <img class = "imgGenerica" src="../img/dentro1.jpeg" alt="insidePhoto1">
-                        <img class = "imgGenerica" src="../img/dentro2.jpeg" alt="insidePhoto2">
-                        <img class = "imgGenerica" src="../img/dentro3.jpeg" alt="insidePhoto3">
-                        <img class = "imgGenerica" src="../img/dentro4.jpeg" alt="insidePhoto4">
-                        <img class = "imgGenerica" src="../img/dentro5.jpeg" alt="insidePhoto5">
-                        <img class = "imgGenerica" src="../img/dentro6.jpeg" alt="insidePhoto6">
-                    </div>
-                </div>
-            </section>
+            </div>
         </main>
         <!-- Aside-->
             <!-- Subscripcion Area-->
