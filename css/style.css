@@ -27,10 +27,14 @@ body{
 /* Nav Top Side */
 header{
     background-color: black;
-    height: 100px;
+    height: 120px;
     max-width:100%;
     top: 0;
     grid-area: header;
+}
+
+.navbar{
+    background-color: black;
 }
 
 .containerNav{
@@ -45,12 +49,12 @@ header{
     flex-grow: 1;
 }
 
-.logo img{
+.logoImagen{
     height: 80px;
     margin: 10px 0 10px 10px;
 }
 
-.logo h1{
+.logoTitulo{
     display:inline-block;
     margin:10px 40px 10px 10px;
     position:absolute;
