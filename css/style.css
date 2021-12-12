@@ -14,7 +14,6 @@ body{
 .grid{
     display: grid;
     width: 100%;
-    grid-template-rows: 6% auto 15% 20%;
     grid-template-areas: 
                         "header"
                         "main"
@@ -25,7 +24,7 @@ body{
 
 /* Nav Top Side */
 header{
-    height: 130px;
+    max-height: 150px;
     max-width:100%;
     top: 0;
     grid-area: header;
@@ -562,14 +561,12 @@ table tr th{
 
 }
 /* Media Querie navbar Top */
-@media (max-width: 992px){
-    header{
-        height:116px;
-    }
+@media (max-width: 993px){
 
     .containerGallery__col img{
         filter:none;
     }
+
 }
 
 /* Media Querie navbar Bot */
