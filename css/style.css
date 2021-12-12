@@ -14,8 +14,7 @@ body{
 .grid{
     display: grid;
     width: 100%;
-    height: 100%;
-    grid-row: 15% auto 15% 20%;
+    grid-template-rows: 6% auto 15% 20%;
     grid-template-areas: 
                         "header"
                         "main"
@@ -26,73 +25,48 @@ body{
 
 /* Nav Top Side */
 header{
-    background-color: black;
-    height: 120px;
+    height: 130px;
     max-width:100%;
     top: 0;
     grid-area: header;
 }
 
-.navbar{
-    background-color: black;
-}
-
-.containerNav{
-    display:flex;
-    justify-content:space-between;
-    margin: 0 auto;
-}
-
-.logo{
+#logo{
     width: 50%;
     height: 80%;
     flex-grow: 1;
 }
 
 .logoImagen{
-    height: 80px;
-    margin: 10px 0 10px 10px;
+    width: 100px;
+    height: 92px;
 }
 
 .logoTitulo{
     display:inline-block;
-    margin:10px 40px 10px 10px;
+    margin:5px 40px 10px 10px;
     position:absolute;
     line-height: 80px;
 }
 
-.navbarTop{
-    width: 50%;
-    display:flex;
-    justify-content: space-between;
-}
-
-.navbarTop li{
-    margin: 10px 10px;
-    line-height: 80px;
+.nav-link{
+    margin: 20px 10px;
+    line-height: 60px;
     text-transform: uppercase;
     font-family: 'Zen Antique', serif;
 }
 
-.navbarTop a{
-    font-size: 1.1rem;
+.navbar-collapse {
+    flex-basis: 100%;
+    flex-grow: 1;
+    align-items: center;
+    position: relative;
+    z-index: 999;
 }
 
-.navbarTop a:hover{
+.navbar-nav a:hover{
     color: #15AFC6;
     transition: .5s;
-}
-
-.navbarTop__toggle{
-    width: 100%;
-    color:white;
-    background:none;
-    border:none;
-    font-size: 30px;
-    padding: 0 20px;
-    line-height: 60px;
-    display: none;
-    cursor: pointer;
 }
 
 /* Subscription Area */
@@ -310,7 +284,7 @@ ul li a{
 #carouselBanner{
     width: 100%;
     margin: auto;
-    margin-top:1px;
+    margin-top:0;
 }
 
 .carousel-item {
@@ -513,7 +487,7 @@ h6{
     margin-left: auto;
 }
 table{
-    width: 100%;
+    width: 80%;
     margin-bottom: 20px;
     margin-left: auto;
     margin-right: auto;
@@ -580,8 +554,24 @@ table tr th{
             text-align: center;
     }
 
+    /* Subscripcion email*/
+
+    .subscripcion__forms--email{
+        width: 450px;
+    }
 
 }
+/* Media Querie navbar Top */
+@media (max-width: 992px){
+    header{
+        height:116px;
+    }
+
+    .containerGallery__col img{
+        filter:none;
+    }
+}
+
 /* Media Querie navbar Bot */
 @media (max-width: 1205px) { 
     .navbarBot ul{
@@ -589,68 +579,8 @@ table tr th{
     }
 }
 
-/* Logo Text */
-@media (max-width: 870px) { 
-    .logo h1{
-        visibility:hidden;
-    }
-}
-
-
 /* Tablet Device 768 x 882 px*/
 @media (max-width: 768px) {
-
-    /* Barra de Navegación Sup*/
-    header{
-        height: 70px;
-    }
-
-    .containerNav{
-        align-items: flex-start;
-    }
-
-    .logo img, .logo h1{
-        height: 50px;
-        line-height: 50px;
-        justify-content: center;
-        margin-left:0;
-    }
-
-    .logo h1{
-        visibility:visible;
-    }
-
-    .logoTitulo{
-        font-size: 1.5rem;
-    }
-
-
-    .navbarTop{
-        flex-direction: column;
-        align-items: left;
-        margin-right: 0;
-        background-color: black;
-        position:fixed;
-        top: 60px;
-        overflow-y: auto;
-
-        width: 100%;
-        left: 100%;
-        transition: left 0.5s;
-    }
-
-    .navbarTop li{
-        line-height: 70px;
-    }
-
-    .navbarTop__toggle{
-        display: block;
-    }
-
-    .navbarTop--visible{
-        left: 0;
-    }
-
 
     .navbarBot ul {
         flex-wrap: wrap;
@@ -663,9 +593,6 @@ table tr th{
         flex-wrap: wrap;
     }
 
-    .subscripcion__forms--email{
-        width: 600px;
-    }
 
     /* Index */
     
@@ -694,9 +621,12 @@ table tr th{
     }
 
     .containerGallery__col img{
-        filter:none;
-            width: 300px;
-            height: 300px;
+        width: 300px;
+        height: 300px;
+    }
+
+    .mapa{
+        width:80%;
     }
 
 }
@@ -737,8 +667,8 @@ table tr th{
 
 /* Media Querie for logo when screen is too small px*/
 
-@media (max-width: 285px) {
-    .logo h1{
+@media (max-width: 418px) {
+    .logoTitulo{
         display:none;
     }
 }
