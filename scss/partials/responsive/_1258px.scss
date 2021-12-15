@@ -1,0 +1,23 @@
+@media (max-width: 1258px) {
+
+    footer{
+      /* Barra de Navegación Inf*/
+      .navbarBot__lista {
+        grid-template-areas: "navegacion"
+                              "nosotros"
+                              "atencion_al_cliente"
+                              "seguinos";
+        justify-content: center;
+        height: 90%; }
+  
+      /*  Copyright */
+      .containerCopyright {
+        height: 9%; 
+      .copyright__txt {
+        padding-left: auto;
+        padding-top: auto;
+        text-align: center; }
+        }
+    }
+}
+  

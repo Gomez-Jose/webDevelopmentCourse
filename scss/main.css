@@ -22,10 +22,7 @@ body {
   display: -ms-grid;
   display: grid;
   width: 100%;
-      grid-template-areas: "header"
- "main"
- "aside"
- "footer";
+      grid-template-areas: "header" "main" "aside" "footer";
 }
 
 /* General */
@@ -242,9 +239,6 @@ footer .navbarBot__lista {
   display: -ms-grid;
   display: grid;
   height: 90%;
-  grid-column: repeat(4, auto);
-  -ms-grid-row: 1;
-  grid-row: 1fr;
       grid-template-areas: "navegacion nosotros atencion_al_cliente seguinos";
 }
 
@@ -661,6 +655,28 @@ table tr th {
   }
 }
 
+@media (max-width: 1258px) {
+  footer {
+    /* Barra de Navegación Inf*/
+    /*  Copyright */
+  }
+  footer .navbarBot__lista {
+        grid-template-areas: "navegacion" "nosotros" "atencion_al_cliente" "seguinos";
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: 90%;
+  }
+  footer .containerCopyright {
+    height: 9%;
+  }
+  footer .containerCopyright .copyright__txt {
+    padding-left: auto;
+    padding-top: auto;
+    text-align: center;
+  }
+}
+
 /* Media Querie navbar Bot */
 @media (max-width: 1205px) {
   .navbarBot__lista--sublista {
@@ -670,26 +686,6 @@ table tr th {
 
 /* Laptop Device 1024 x 854 px*/
 @media (max-width: 1024px) {
-  /* Barra de Navegación Inf*/
-  .navbarBot {
-        grid-template-areas: "navegacion"
- "nosotros"
- "atencion_al_cliente"
- "seguinos";
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    height: 90%;
-  }
-  /*  Copyright */
-  .containerCopyright {
-    height: 9%;
-  }
-  .copyright__txt {
-    padding-left: auto;
-    padding-top: auto;
-    text-align: center;
-  }
   /* Subscripcion email*/
   .subscripcion__forms--email {
     width: 450px;
@@ -702,11 +698,16 @@ table tr th {
     -webkit-filter: none;
             filter: none;
   }
+  .contenedorProductos .containerItemProducto {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 /* Tablet Device 768 x 882 px*/
 @media (max-width: 768px) {
-  .navbarBot ul {
+  .navbarBot__lista--sublista {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
@@ -784,7 +785,7 @@ table tr th {
 
 /* Media Querie for logo when screen is too small px*/
 @media (max-width: 418px) {
-  .logoTitulo {
+  header #logo .logoTitulo {
     display: none;
   }
 }

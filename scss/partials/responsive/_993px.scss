@@ -1,5 +1,10 @@
   /* Media Querie navbar Top */
   @media (max-width: 993px) {
     .imgGenerica {
-      filter: none; } }
+      filter: none; } 
+    
+    .contenedorProductos .containerItemProducto {
+      justify-content: center;
+    }
+  }
   

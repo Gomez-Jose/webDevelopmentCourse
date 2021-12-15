@@ -9,8 +9,6 @@ footer {
   .navbarBot__lista {
     display: grid;
     height: 90%;
-    grid-column: repeat(4, auto);
-    grid-row: 1fr;
     grid-template-areas: "navegacion nosotros atencion_al_cliente seguinos"; 
     &--sublista {
       display: flex;
