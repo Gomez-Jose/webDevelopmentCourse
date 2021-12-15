@@ -1,0 +1,27 @@
+  /* Tablet Device 768 x 882 px*/
+  @media (max-width: 768px) {
+    .navbarBot ul {
+      flex-wrap: wrap; }
+    /* Subscripción */
+    .subscripcion {
+      justify-content: center;
+      flex-wrap: wrap; }
+    /* Index */
+    .main__video {
+      flex-direction: column;
+      gap: 0; }
+    #videoYT {
+      max-width: 100%; }
+    .main__txt {
+      margin-right: 0px; }
+    /* Productos */
+    .containerItemProducto {
+      flex-direction: column; }
+    /* Galería */
+    .containerGallery__col {
+      justify-content: center; }
+    .imgGenerica {
+      width: 300px;
+      height: 300px; }
+    .mapa {
+      width: 80%; } }

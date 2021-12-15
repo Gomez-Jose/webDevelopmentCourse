@@ -1,0 +1,43 @@
+@import "../vars";
+
+/* Nav Top Side */
+
+header {
+    max-height: 150px;
+    max-width: 100%;
+    top: 0;
+    grid-area: header; 
+  
+    #logo {
+    width: 50%;
+    height: 80%;
+    flex-grow: 1;
+    .logoImagen {
+        width: 100px;
+        height: 92px; }
+
+    .logoTitulo {
+        display: inline-block;
+        margin: 5px 40px 10px 10px;
+        position: absolute;
+        line-height: 80px; }
+        color: $colorppal3;
+        font-family: 'Dancing Script', cursive;
+        font-size: 2rem;
+    }
+  
+  
+    .navbar-collapse {
+        flex-basis: 100%;
+        flex-grow: 1;
+        align-items: center;
+        position: relative;
+        z-index: 999;
+        .nav-link {
+            margin: 20px 10px;
+            line-height: 60px;
+            text-transform: uppercase;
+            font-family: 'Zen Antique', serif; 
+        }
+    }
+}

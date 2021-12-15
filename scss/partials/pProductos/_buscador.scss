@@ -1,0 +1,31 @@
+@import "../vars";
+
+/* Buscador de Categorías Productos y Galeria */
+
+.col-md-12 {
+    margin-top: 20px;
+    background-color: $colorppal1;
+    width: fit-content;
+    .tituloBuscador {
+        text-align: center; 
+    }
+    .tituloCategoria {
+        text-align: center; 
+    }
+    .buscador_categorias {
+        flex-direction: column;
+        justify-content: left;
+        width: 50%;
+        & a:hover {
+            color: $colorppal2;
+            transition: .5s; }
+    }
+}
+  
+  
+  
+  
+  
+  
+  
+  

@@ -1,0 +1,30 @@
+/* Video and text */
+
+.main__video {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+    width: 100%;
+    padding: 40px 40px;
+    gap: 3rem;
+    height: max-content;
+    #videoYT {
+        display: inline;
+        max-width: 50%; }
+    .main__txt {
+        align-items: left;
+        width: 50%;
+        height: auto;
+        display: inline;
+        margin-bottom: 50px;
+        &--descrip {
+            line-height: 1.2;
+            font-size: 1.2rem; }
+        }
+}
+  
+  
+  
+  

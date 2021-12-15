@@ -1,0 +1,27 @@
+@import "../vars";
+
+/* Subscription Area */
+
+.subscripcion {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $colorsuscripcion;
+    padding: 1rem;
+
+    &__txt {
+        text-align: center;
+        margin-left: 60px; }
+      
+    &__forms--formulario {
+        margin-right: 15px; }
+      
+    &__forms--email {
+        width: 600px; }
+      
+    &__txt--titulo{
+        color: $colorppal3; }
+  }
+  
+  
+  

@@ -1,3 +1,22 @@
+@charset "UTF-8";
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+/* Common in all pages */
+body {
+  height: 100vh;
+  background-color: #3D3C65; }
+
+.grid {
+  display: grid;
+  width: 100%;
+  grid-template-areas: "header"
+ "main"
+ "aside"
+ "footer"; }
+
 /* Nav Top Side */
 header {
   max-height: 150px;
@@ -43,7 +62,8 @@ header {
   justify-content: space-between;
   align-items: center;
   background-color: #256CB1;
-  padding: 1rem; }
+  padding: 1rem;
+}
 
 .subscripcion__txt {
   text-align: center;
@@ -93,8 +113,9 @@ footer {
   width: 200px;
   margin: 60px; }
 
-.containerLinks__items, .navegacion, .nosotros, .atencion_al_cliente, .seguinos {
-  padding: 10px; }
+.containerLinks__items, .navegacion, .nosotros, .atencion_al_cliente,.seguinos {
+  padding: 10px;
+}
 
 .containerLinks__items--link, .navegacion__link, .nosotros__link, .atencion_al_cliente__link, .seguinos__link {
   text-decoration: none;

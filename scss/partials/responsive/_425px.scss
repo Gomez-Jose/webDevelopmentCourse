@@ -1,0 +1,8 @@
+  /* Media Querie for side nav bar in products when screen is too small px*/
+  @media (max-width: 425px) {
+    #contentPlaceHolderIzquierda {
+      display: none; }
+    .imgGenerica {
+      width: 250px;
+      height: 200px; } }
+  

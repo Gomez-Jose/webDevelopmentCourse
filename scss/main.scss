@@ -1,0 +1,54 @@
+/* Variables */
+@import "./partials/vars";
+
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Zen+Antique&display=swap');
+
+/* General Structure */
+
+@import "./partials/estructura/reset";
+@import "./partials/estructura/body";
+@import "./partials/estructura/grid";
+@import "./partials/estructura/general";
+@import "./partials/estructura/header";
+@import "./partials/estructura/separador";
+@import "./partials/estructura/subscripcionArea";
+@import "./partials/estructura/footer";
+
+/* Index */
+
+@import "./partials/pIndex/carouselBanner";
+@import "./partials/pIndex/aditional";
+
+/* Productos */
+
+@import "./partials/pProductos/buscador";
+@import "./partials/pProductos/productos";
+
+/* Galeria */
+
+@import "./partials/pGaleria/photos";
+
+/* Historia */
+
+@import "./partials/pHistoria/card";
+
+/* Contacto */
+
+@import "./partials/pContacto/atCliente";
+@import "./partials/pContacto/sectContacto";
+@import "./partials/pContacto/map";
+@import "./partials/pContacto/sectFAQ";
+@import "./partials/pContacto/table";
+@import "./partials/pContacto/sectPoliticasPriv";
+
+/* MEDIA QUERIES */
+
+@import "./partials/responsive/1372px";
+@import "./partials/responsive/1205px";
+@import "./partials/responsive/1024px";
+@import "./partials/responsive/993px";
+@import "./partials/responsive/768px";
+@import "./partials/responsive/601px";
+@import "./partials/responsive/425px";
+@import "./partials/responsive/418px";

@@ -1,0 +1,37 @@
+@import "../vars";
+
+/* Separador */ 
+
+.separador {
+    background: $colorseparador1;
+    background: linear-gradient(90deg, $colorseparador1 0%, $colorseparador2 38%, $colorseparador3 100%);
+    height: 6px !important;
+    border: none;
+    margin: 0;
+    opacity: 1; }
+
+    .color-change-3x {
+        -webkit-animation: color-change-3x 4s linear infinite alternate both;
+        animation: color-change-3x 4s linear infinite alternate both;
+      
+      /* 
+       * ----------------------------------------
+       * animation color-change-3x
+       * ----------------------------------------
+       */
+      @-webkit-keyframes color-change-3x  {
+        0% {
+          background: $colorseparador1; }
+        50% {
+          background: $colorseparador2; }
+        100% {
+          background: $colorseparador3; } }
+      
+      @keyframes color-change-3x {
+        0% {
+          background: $colorseparador3; }
+        50% {
+          background: $colorseparador2; }
+        100% {
+          background: $colorseparador1; } }
+    }

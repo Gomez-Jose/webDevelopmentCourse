@@ -1,0 +1,52 @@
+@import "../vars";
+
+/* General */
+  ul {
+    list-style: none; }
+  
+  form {
+    color: $colorppal3; }
+  
+  main {
+    grid-area: main; }
+  
+  aside {
+    grid-area: aside; }
+  
+  p {
+    color: $colorppal3;
+    text-align: center;
+    font-size: 1rem;
+    line-height: 1.5; }
+  
+  strong {
+    color: $colorppal2; }
+
+  h2 {
+    color: $colorppal2;
+    font-family: 'Zen Antique', serif;
+    text-align: center;
+    font-size: 3rem; }
+  
+  h3 {
+    color: $colorppal2;
+    font-family: 'Zen Antique', serif;
+    text-align: center;
+    font-size: 2rem; }
+  
+  ul li {
+    color: $colorppal3; }
+  
+  ul li a {
+    text-decoration: none;
+    color: $colorppal3; }
+
+  hr {
+    color: $colorppal3;
+    opacity: 1; }
+
+  h5 {
+    color: $colorppal3; }
+
+  h6 {
+    color: $colorppal3; }
