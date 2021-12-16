@@ -126,6 +126,10 @@ header #logo .logoTitulo {
   line-height: 80px;
 }
 
+header .navbar {
+  z-index: 999;
+}
+
 header .navbar-collapse {
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;

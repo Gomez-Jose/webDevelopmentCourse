@@ -25,7 +25,10 @@ header {
         font-family: 'Dancing Script', cursive;
         font-size: 2rem;
     }
-  
+
+    .navbar{
+        z-index: 999;
+    }
   
     .navbar-collapse {
         flex-basis: 100%;
