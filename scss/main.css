@@ -670,6 +670,7 @@ table tr th {
         -ms-flex-pack: center;
             justify-content: center;
     height: 90%;
+    padding-left: unset;
   }
   footer .containerCopyright {
     height: 9%;
