@@ -15,6 +15,8 @@ Before starting to code we had to make a wireframe which showed the way we imagi
 
 NOTE: Wireframe is located in this repository.
 
-I built the website using HTML & CSS and then added Bootstrap where I thought it would improve the project. 
+I built the website using HTML & CSS and then added Bootstrap where I thought it would improve the project.
+
+Some basic principles of SEO were covered in the course and included in the project. Regarding SCSS, I tried to recycle code as much as I could and made all the partials that I thought were necessary for a small project such as these one.
 
 Feedback is always appreciated!
