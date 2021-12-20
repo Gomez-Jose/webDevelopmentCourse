@@ -26,7 +26,7 @@
         <header>
             <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
                 <div id = "logo" class="container-fluid">
-                    <a class="navbar-brand" href="#"><img class = "logoImagen" src="img/logo.png" alt="Colecciones Vargas" class="d-inline-block align-text-top"><h1 class = "logoTitulo">Colecciones Vargas</h1></a>
+                    <a class="navbar-brand" href="#"><img class = "logoImagen" src="img/logo.png" alt="Colecciones Vargas" class="d-inline-block align-text-top"><p class = "logoTitulo">Colecciones Vargas</p></a>
                 </div>
                   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -66,21 +66,24 @@
         <main>
             <hr class = "separador color-change-3x">
             <!-- Carousel Bootstrap -->
-            <div id="carouselBanner" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <img id = "carousel-item--img" src="./img/banner1.jpeg" class="d-block w-100" alt="imgCarousel1">
-                  </div>
-                  <div class="carousel-item">
-                    <img id = "carousel-item--img" src="./img/banner2.jpeg" class="d-block w-100" alt="imgCarousel2">
+            <section class = "main__carousel">
+                <div id="carouselBanner" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img id = "carousel-item--img" src="./img/banner1.jpeg" class="d-block w-100" alt="imgCarousel1">
+                        </div>
+                        <div class="carousel-item">
+                            <img id = "carousel-item--img" src="./img/banner2.jpeg" class="d-block w-100" alt="imgCarousel2">
+                        </div>
+                    </div>
                 </div>
-              </div>
+            </section>
             <!-- Video and text-->
             <div class="main__contenedor">
                 <div class = "main__video">
                     <iframe id="videoYT" width="560" height="315" src="https://www.youtube.com/embed/DudpSXV4KxU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     <div class = "main__txt">
-                        <h2>Apertura del local</h2>
+                        <h1 class = "main__txt--titulo">Apertura del local</h1>
                         <p class = "main__txt--descrip">
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea expedita inventore ad, temporibus quo ipsum rem tempore perferendis minima illo non maxime iusto.
                                 Dolorem earum libero accusamus, laudantium quae eius. Id qui obcaecati, numquam saepe nostrum recusandae voluptate ipsa voluptatum autem labore reiciendis! 

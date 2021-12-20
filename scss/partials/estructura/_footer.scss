@@ -1,5 +1,19 @@
 @import "../vars";
 
+$mapFooter: (
+    navegacion: navegacion,
+    nosotros: nosotros,
+    atencion_al_cliente: atencion_al_cliente,
+    seguinos: seguinos
+);
+
+$contentFooter: (
+  align: center,
+  pad: 10px,
+  colorin: $colorppal2,
+  deco: none
+);
+
 /* Nav Bot Side */
 footer {
     background-color: $colorppal1;
@@ -15,49 +29,24 @@ footer {
       flex-direction: column;
       width: 200px;
       margin: 60px; 
-      .navegacion {
-        grid-area: navegacion;
-        text-align: center;
-        padding: 10px; 
-        &__link{
-          text-decoration: none;
-          color: $colorppal2; }
+      @each $item, $area in $mapFooter{
+        .#{$item}{
+          grid-area: $area;
+          text-align: map-get($map: $contentFooter, $key: align);
+          padding: map-get($map: $contentFooter, $key: pad); 
+          &__link{
+            text-decoration: map-get($map: $contentFooter, $key:deco );
+            color: map-get($map: $contentFooter, $key: colorin); }
         }
-      
-      .nosotros {
-        grid-area: nosotros;
-        text-align: center;
-        padding: 10px;
-        &__link{
-          text-decoration: none;
-          color: $colorppal2; }
-        }
-      
-      .atencion_al_cliente {
-        grid-area: atencion_al_cliente;
-        text-align: center;
-        padding: 10px; 
-        &__link{
-          text-decoration: none;
-          color: $colorppal2; }
-        }
-      
-      .seguinos {
-        grid-area: seguinos;
-        text-align: center;
-        padding: 10px;
-        &__link{
-          text-decoration: none;
-          color: $colorppal2; }
-        }
+      }
 
       .containerLinks {
-        text-align: center;       
+        text-align: map-get($map: $contentFooter, $key: align);       
         &__items{
-          padding: 10px;
+          padding: map-get($map: $contentFooter, $key: pad);
           &--link {
-            text-decoration: none;
-            color: $colorppal2; }
+            text-decoration: map-get($map: $contentFooter, $key:deco );
+            color: map-get($map: $contentFooter, $key: colorin); }
           }
         }
   

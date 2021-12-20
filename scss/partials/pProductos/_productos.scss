@@ -1,3 +1,9 @@
+@import "../vars";
+
+.productos__titulo{
+    margin: $margintitulos 0;
+}
+
 .contenedorProductos {
     width: 100%;
     display: flex;

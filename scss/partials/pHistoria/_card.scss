@@ -1,8 +1,12 @@
 .card {
     height: max-content;
     overflow: hidden;
-    &-text {
+    &__text {
         text-align: left; }
+    &__title{
+        color: $colorppal3;
+        text-align:left;
+    }
 }
   
   

@@ -26,7 +26,7 @@
         <header>
             <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
                 <div id = "logo" class="container-fluid">
-                    <a class="navbar-brand" href="#"><img class = "logoImagen" src="../img/logo.png" alt="Colecciones Vargas" class="d-inline-block align-text-top"><h1 class = "logoTitulo">Colecciones Vargas</h1></a>
+                    <a class="navbar-brand" href="#"><img class = "logoImagen" src="../img/logo.png" alt="Colecciones Vargas" class="d-inline-block align-text-top"><p class = "logoTitulo">Colecciones Vargas</p></a>
                 </div>
                   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -67,60 +67,62 @@
         <main>
             <hr class = "separador color-change-3x">
             <!-- Intro section -->
+            <h1 class = "contacto__titulo">Contacto</h1>
             <section class = "atCliente">
                 <article class = "atCliente__articulo">
-                    <h2>Atención al cliente</h2>
-                    <h3>Contacto</h3>
-                    <p>Puede comunicarse con nosotros a través de las siguientes vías:
+                    <h2 class = "atCliente__articulo__titulo">Atención al cliente</h2>
+                    <p class = "atCliente__articulo__txt">Puede comunicarse con nosotros a través de las siguientes vías:
                         <ul class = "atCliente__lista">
-                            <li>Horario de atención: <br> 8:30 a 18:00 Lunes a Viernes</li>
-                            <li>info@coleccionesvargas.com</li>
-                            <li><a href="#formulario">Formulario</a></li>
-                            <li><a href="https://www.facebook.com/pages/category/Shopping---Retail/Colecciones-Vargas-103493888322560/">Nuestro Facebook</a></li>
+                            <li class = "atCliente__lista--item">Horario de atención: <br> 8:30 a 18:00 Lunes a Viernes</li>
+                            <li class = "atCliente__lista--item">info@coleccionesvargas.com</li>
+                            <li class = "atCliente__lista--item"><a href="#formulario">Formulario</a></li>
+                            <li class = "atCliente__lista--item"><a href="https://www.facebook.com/pages/category/Shopping---Retail/Colecciones-Vargas-103493888322560/">Nuestro Facebook</a></li>
                         </ul>
                     </p>
                 </article>
             </section>
             <!-- Contact section -->
-            <section id = "sectContacto">
-                <h3>Formulario</h3>
-                <p>Si desea consultarnos sobre un pedido en curso, por favor informarnos el número de orden del mismo.</p>
-                <!-- Form -->
-                <form class="formsContacto" action="#" method="get" enctype="text/plain" >
-                    <fieldset>
-                        <legend>Información Personal</legend>
-                        <label for="sexo">Sexo: </label>
-                        <br>
-                        <input type="radio" name="sexo" value= "masculino">Hombre
-                        <input type="radio" name="sexo" value= "femenino">Mujer
-                        <br>
-                        <label for="nombre">Nombre: </label>
-                        <br> 
-                        <input type="text" name="nombre" placeholder="Ingrese su nombre">
-                        <br>
-                        <label for="apellido">Apellido: </label>
-                        <br> 
-                        <input type="text" name="apellido" placeholder="Ingrese su apellido">
-                        <br>
-                        <label for="emailForm">Email: </label>
-                        <br> 
-                        <input type="email" name="user-email" id="emailForm" placeholder="Ingrese su e-mail">
-                        <br>
-                        <label for="mensaje">Mensaje: </label>
-                        <br> 
-                        <textarea rows = "5" cols="60" name = "user-message" id = "mensaje" placeholder = "Deja tu mensaje"></textarea>
-                        <br><br>
-                        <label for="problemas">Problema: </label>
-                        <select name="user-problem" id="problemas">
-                            <option value="envio"> Envio</option>
-                            <option value="pago"> Pago </option>
-                            <option value="otro"> Otro</option>
-                        </select>
-                        <br><br>
-                        <input type="submit" value= "Enviar">
-                        <input type="reset" value="Reiniciar">
-                    </fieldset>
-                </form>
+            <section id = "sectContacto"> 
+                <article class = "sectContrato__articulo">
+                    <h2 class = "sectContrato__articulo__titulo">Formulario</h2>
+                    <p class = "sectContrato__articulo__txt">Si desea consultarnos sobre un pedido en curso, por favor informarnos el número de orden del mismo.</p>
+                    <!-- Form -->
+                    <form class="formsContacto" action="#" method="get" enctype="text/plain" >
+                        <fieldset>
+                            <legend>Información Personal</legend>
+                            <label for="sexo">Sexo: </label>
+                            <br>
+                            <input type="radio" name="sexo" value= "masculino">Hombre
+                            <input type="radio" name="sexo" value= "femenino">Mujer
+                            <br>
+                            <label for="nombre">Nombre: </label>
+                            <br> 
+                            <input type="text" name="nombre" placeholder="Ingrese su nombre">
+                            <br>
+                            <label for="apellido">Apellido: </label>
+                            <br> 
+                            <input type="text" name="apellido" placeholder="Ingrese su apellido">
+                            <br>
+                            <label for="emailForm">Email: </label>
+                            <br> 
+                            <input type="email" name="user-email" id="emailForm" placeholder="Ingrese su e-mail">
+                            <br>
+                            <label for="mensaje">Mensaje: </label>
+                            <br> 
+                            <textarea rows = "5" cols="60" name = "user-message" id = "mensaje" placeholder = "Deja tu mensaje"></textarea>
+                            <br><br>
+                            <label for="problemas">Problema: </label>
+                            <select name="user-problem" id="problemas">
+                                <option value="envio"> Envio</option>
+                                <option value="pago"> Pago </option>
+                                <option value="otro"> Otro</option>
+                            </select>
+                            <br><br>
+                            <input type="submit" value= "Enviar">
+                            <input type="reset" value="Reiniciar">
+                        </fieldset>
+                    </form>
+                </article>
             </section>
             <!-- Google maps -->
             <div class = "containerMap">
@@ -128,16 +130,16 @@
             </div>
             <!-- FAQS -->
             <section id = "sectFAQS">
-                <article>
-                    <h2>Preguntas Frecuentes</h2>
-                    <h3>¿Venden articulos usados?</h3>
-                    <p>Todos los productos que vendemos son nuevos y si bien algunas ediciones pueden tener años, nunca se trata de productos con uso. De operar alguna devolución los mismos deben ser reintegrados en perfecto estado y a través del mecanismo previstos</p>
-                    <h3>¿Puedo agregar un producto luego de realizar la compra?</h3>
-                    <p>Si el pedido no fue despachado, para agregar un producto a una compra en curso, envíe un e-mail a logistica@coleccionesVargas.com informando el número de compra y el título que desea agregar.</p>
-                    <h3>¿Puedo cancelar una compra luego de realizarla?</h3>
-                    <p>Para cancelar una compra envíe un e-mail a logistica@coleccionesVargas.com informando el número de compra que quiere cancelar. Si la compra ya hubiera sido enviada, al recibir el paquete debe rechazarlo informando que lo devuelvan al remitente.</p>
-                    <h3>¿Cuándo recibiré mi compra?</h3>
-                    <p>
+                <article class = "sectFAQS__articulo">
+                    <h2 class = "sectFAQS__articulo__titulo">Preguntas Frecuentes</h2>
+                    <h3 class = "sectFAQS__articulo__titulo--subtitulo">¿Venden articulos usados?</h3>
+                    <p class = "sectFAQS__articulo__txt">Todos los productos que vendemos son nuevos y si bien algunas ediciones pueden tener años, nunca se trata de productos con uso. De operar alguna devolución los mismos deben ser reintegrados en perfecto estado y a través del mecanismo previstos</p>
+                    <h3 class = "sectFAQS__articulo__titulo--subtitulo">¿Puedo agregar un producto luego de realizar la compra?</h3>
+                    <p class = "sectFAQS__articulo__txt">Si el pedido no fue despachado, para agregar un producto a una compra en curso, envíe un e-mail a logistica@coleccionesVargas.com informando el número de compra y el título que desea agregar.</p>
+                    <h3 class = "sectFAQS__articulo__titulo--subtitulo">¿Puedo cancelar una compra luego de realizarla?</h3>
+                    <p class = "sectFAQS__articulo__txt">Para cancelar una compra envíe un e-mail a logistica@coleccionesVargas.com informando el número de compra que quiere cancelar. Si la compra ya hubiera sido enviada, al recibir el paquete debe rechazarlo informando que lo devuelvan al remitente.</p>
+                    <h3 class = "sectFAQS__articulo__titulo--subtitulo">¿Cuándo recibiré mi compra?</h3>
+                    <p class = "sectFAQS__articulo__txt">
                         Para averiguar en cuánto tiempo recibiré mi compra, debo considerar la salida del depósito (por ejemplo "normalmente salida del depósito en 3 días"), más el tiempo de envío.
                         <br><br>
                         La <strong>salida del depósito</strong> es el tiempo que normalmente nos lleva conseguir los libros que ha solicitado, desde el momento en que usted realiza la compra.
@@ -172,13 +174,13 @@
                           </tr>
                         </tbody>
                       </table>
-                    <h3>¿Tengo que pagar algún impuesto para compras fuera de Argentina?</h3>
-                    <p>Para compras fuera de Argentina, los cargos en el país de destino por retiro de Aduana o impuestos aduaneros son responsabilidad del cliente y pueden 
+                    <h3 class = "sectFAQS__articulo__titulo--subtitulo">¿Tengo que pagar algún impuesto para compras fuera de Argentina?</h3>
+                    <p class = "sectFAQS__articulo__txt">Para compras fuera de Argentina, los cargos en el país de destino por retiro de Aduana o impuestos aduaneros son responsabilidad del cliente y pueden 
                         variar de país en país. Recomendamos contactar la oficina de Aduanas local de su país para obtener información de posibles cargos por los conceptos
                         mencionados.
                     </p>
-                    <h2>Devoluciones y/o cambios</h2>
-                    <p>
+                    <h3 class = "sectFAQS__articulo__titulo--subtitulo">Devoluciones y/o cambios</h3>
+                    <p class = "sectFAQS__articulo__txt">
                         A partir de la recepción del paquete, usted cuenta con 10 días corridos para poder realizar cambios o devoluciones.
                         <br><br>
                         Si tu pedido contiene material agotado o faltante, reintegraremos el dinero por el mismo medio que abonaste y sobre la misma orden de pago (Sin excepciones).
@@ -201,12 +203,14 @@
             </section>
             <!-- Privacy Policies -->
             <section id = "sectPriv">
-                <h2>Políticas de Privacidad</h2>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem est sed molestias dicta enim ipsa pariatur ad porro maxime totam!
-                    Iusto alias sunt necessitatibus numquam eligendi ab, maxime expedita inventore nulla at doloribus sapiente explicabo quaerat veniam dicta 
-                    consequuntur quidem saepe, asperiores, nobis hic corrupti id. Cupiditate dolorum possimus ab, voluptate debitis, quo animi 
-                    totam non repellat placeat modi recusandae?
-                </p>
+                <article class = "sectPriv__articulo" >
+                    <h2 class = "sectPriv__articulo__titulo" >Políticas de Privacidad</h2>
+                    <p class = "sectPriv__articulo__txt">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem est sed molestias dicta enim ipsa pariatur ad porro maxime totam!
+                        Iusto alias sunt necessitatibus numquam eligendi ab, maxime expedita inventore nulla at doloribus sapiente explicabo quaerat veniam dicta 
+                        consequuntur quidem saepe, asperiores, nobis hic corrupti id. Cupiditate dolorum possimus ab, voluptate debitis, quo animi 
+                        totam non repellat placeat modi recusandae?
+                    </p>
+                </article>
             </section>
         </main>
         <!-- Aside-->

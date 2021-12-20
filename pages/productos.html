@@ -26,7 +26,7 @@
         <header>
             <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
                 <div id = "logo" class="container-fluid">
-                    <a class="navbar-brand" href="#"><img class = "logoImagen" src="../img/logo.png" alt="Colecciones Vargas" class="d-inline-block align-text-top"><h1 class = "logoTitulo">Colecciones Vargas</h1></a>
+                    <a class="navbar-brand" href="#"><img class = "logoImagen" src="../img/logo.png" alt="Colecciones Vargas" class="d-inline-block align-text-top"><p class = "logoTitulo">Colecciones Vargas</p></a>
                 </div>
                   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -66,29 +66,30 @@
         <!-- Main Section -->
         <main>
             <hr class = "separador color-change-3x">
-            <div class="container">
-                <div class="row justify-content-start">
-                    <div class="col-2">
-                        <div id="contentPlaceHolderIzquierda" class="col-md-12">
-                            <h5 class="tituloBuscador">Buscador</h5>
-                            <nav id="contentPlaceHolderIzquierda_contenedorBuscador" class="nav_buscador-categorias">
-                                <h6 class="tituloCategoria">Categoría</h6>
-                                <hr>
-                                <ul id="contentPlaceHolderIzquierda_contenedorBuscador_buscadorTema1" class="buscador_categorias">
-                                    <li id="contentPlaceHolderIzquierda_contenedorBuscador_buscadorTema1_tema1_a" ><a href="#contenedorA" class=" level1">ALBUMES <span>(4)</span> </a></li>
-                                    <li id="contentPlaceHolderIzquierda_contenedorBuscador_buscadorTema1_tema1_b" ><a href="#contenedorB" class= "level1">FIGURAS <span>(4)</span> </a></li>
-                                    <li id="contentPlaceHolderIzquierda_contenedorBuscador_buscadorTema1_tema1_c" ><a href="#contenedorC" class= "level1">MANGAS <span>(4)</span> </a></li>
-                                    <li id="contentPlaceHolderIzquierda_contenedorBuscador_buscadorTema1_tema1_d" ><a href="#contenedorD" class= "level1">CARTAS <span>(4)</span> </a></li>
-                                    <li id="contentPlaceHolderIzquierda_contenedorBuscador_buscadorTema1_tema1_e" ><a href="#contenedorE"  class=" level1">TAZOS <span>(1)</span> </a></li>
-                                    <li id="contentPlaceHolderIzquierda_contenedorBuscador_buscadorTema1_tema1_f" ><a href="#contenedorF"  class=" level1">JUGUETES <span>(1)</span> </a></li>
-                                </ul>
-                            </nav>
+                <div class="container">
+                    <div class="row justify-content-start">
+                        <div class="col-2">
+                            <div id="contentPlaceHolderIzquierda" class="col-md-12">
+                                <h5 class="tituloBuscador">Buscador</h5>
+                                <nav id="contentPlaceHolderIzquierda_contenedorBuscador" class="nav_buscador-categorias">
+                                    <h6 class="tituloCategoria">Categoría</h6>
+                                    <hr>
+                                    <ul id="contentPlaceHolderIzquierda_contenedorBuscador_buscadorTema1" class="buscador_categorias">
+                                        <li id="contentPlaceHolderIzquierda_contenedorBuscador_buscadorTema1_tema1_a" ><a href="#contenedorA" class=" level1">ALBUMES <span>(4)</span> </a></li>
+                                        <li id="contentPlaceHolderIzquierda_contenedorBuscador_buscadorTema1_tema1_b" ><a href="#contenedorB" class= "level1">FIGURAS <span>(4)</span> </a></li>
+                                        <li id="contentPlaceHolderIzquierda_contenedorBuscador_buscadorTema1_tema1_c" ><a href="#contenedorC" class= "level1">MANGAS <span>(4)</span> </a></li>
+                                        <li id="contentPlaceHolderIzquierda_contenedorBuscador_buscadorTema1_tema1_d" ><a href="#contenedorD" class= "level1">CARTAS <span>(4)</span> </a></li>
+                                        <li id="contentPlaceHolderIzquierda_contenedorBuscador_buscadorTema1_tema1_e" ><a href="#contenedorE"  class=" level1">TAZOS <span>(1)</span> </a></li>
+                                        <li id="contentPlaceHolderIzquierda_contenedorBuscador_buscadorTema1_tema1_f" ><a href="#contenedorF"  class=" level1">JUGUETES <span>(1)</span> </a></li>
+                                    </ul>
+                                </nav>
+                            </div>
                         </div>
-                    </div>
                 <div class="col-8">
                     <section class = "contenedorProductos">
+                        <h1 class = "productos__titulo">Productos</h1>
                         <div id = "contenedorA">
-                            <h2>Albumes</h2>
+                            <h2 class = "productos__titulo--sec">Albumes</h2>
                             <div class = "row">
                                 <div class = "containerItemProducto">
                                     <img class = "producto__img" src="../img/album1.jpg" alt="album1">
@@ -99,7 +100,7 @@
                             </div>
                         </div>
                         <div id = "contenedorB">
-                            <h2>Figuras</h2>
+                            <h2 class = "productos__titulo--sec">Figuras</h2>
                             <div class = "row">
                                 <div class = "containerItemProducto">
                                     <img class = "producto__img" src="../img/fig1.jpg" alt="figura1">
@@ -110,7 +111,7 @@
                             </div>
                         </div>
                         <div id = "contenedorC">
-                            <h2>Mangas</h2>
+                            <h2 class = "productos__titulo--sec">Mangas</h2>
                             <div class = "row">
                                 <div class = "containerItemProducto">
                                     <img class = "producto__img" src="../img/manga1.jpg" alt="manga1">
@@ -121,7 +122,7 @@
                             </div>
                         </div>
                         <div id = "contenedorD">
-                            <h2>Cartas</h2>
+                            <h2 class = "productos__titulo--sec">Cartas</h2>
                             <div class = "row">
                                 <div class = "containerItemProducto">
                                     <img class = "producto__img" src="../img/carta1.jpg" alt="carta1">
@@ -132,7 +133,7 @@
                             </div>
                         </div>
                         <div id = "contenedorE">
-                            <h2>Tazos</h2>
+                            <h2 class = "productos__titulo--sec">Tazos</h2>
                             <div class = "row">
                                 <div class = "containerItemProducto">
                                     <img class = "producto__img" src="../img/tazo1.jpg" alt="tazo1">
@@ -140,7 +141,7 @@
                             </div>
                         </div>
                         <div id = "contenedorF">
-                            <h2>Juguetes</h2>
+                            <h2 class = "productos__titulo--sec">Juguetes</h2>
                             <div class = "row">
                                 <div class = "containerItemProducto">
                                     <img class = "producto__img" src="../img/toy1.jpg" alt="toy1">

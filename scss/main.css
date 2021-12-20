@@ -57,17 +57,18 @@ strong {
   color: #15AFC6;
 }
 
-h2 {
+h1, h2, h3 {
   color: #15AFC6;
   font-family: 'Zen Antique', serif;
   text-align: center;
   font-size: 3rem;
 }
 
+h2 {
+  font-size: 2.5rem;
+}
+
 h3 {
-  color: #15AFC6;
-  font-family: 'Zen Antique', serif;
-  text-align: center;
   font-size: 2rem;
 }
 
@@ -109,9 +110,6 @@ header #logo {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
-  color: white;
-  font-family: 'Dancing Script', cursive;
-  font-size: 2rem;
 }
 
 header #logo .logoImagen {
@@ -124,6 +122,9 @@ header #logo .logoTitulo {
   margin: 5px 40px 10px 10px;
   position: absolute;
   line-height: 80px;
+  color: white;
+  font-family: 'Dancing Script', cursive;
+  font-size: 2.5rem;
 }
 
 header .navbar {
@@ -453,6 +454,10 @@ footer .containerCopyright .copyright__txt {
   transition: .5s;
 }
 
+.productos__titulo {
+  margin: 2rem 0;
+}
+
 .contenedorProductos {
   width: 100%;
   display: -webkit-box;
@@ -496,6 +501,10 @@ footer .containerCopyright .copyright__txt {
 }
 
 /* Galeria */
+.galeria__titulo {
+  margin: 2rem 0;
+}
+
 .containerGallery {
   width: 100%;
   display: -webkit-box;
@@ -558,11 +567,20 @@ footer .containerCopyright .copyright__txt {
   overflow: hidden;
 }
 
-.card-text {
+.card__text {
+  text-align: left;
+}
+
+.card__title {
+  color: white;
   text-align: left;
 }
 
 /* Contacto */
+.contacto__titulo {
+  margin: 2rem 0;
+}
+
 .atCliente__lista {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -583,16 +601,14 @@ footer .containerCopyright .copyright__txt {
 #sectContacto {
   display: block;
   text-align: center;
-  padding-bottom: 25px;
-  padding-top: 25px;
+  padding: 25px 0;
 }
 
 #sectContacto .formsContacto {
   display: inline-block;
   margin-left: auto;
   margin-right: auto;
-  padding-bottom: 25px;
-  padding-top: 25px;
+  padding: 25px 0;
   width: 100%;
 }
 
@@ -601,8 +617,7 @@ footer .containerCopyright .copyright__txt {
 }
 
 .containerMap {
-  padding-bottom: 25px;
-  padding-top: 25px;
+  padding: 25px 0;
 }
 
 .containerMap .mapa {

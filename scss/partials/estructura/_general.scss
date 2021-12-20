@@ -16,23 +16,26 @@
   p {
     color: $colorppal3;
     text-align: center;
-    font-size: 1rem;
+    font-size: $fontsizegenerico;
     line-height: 1.5; }
   
   strong {
     color: $colorppal2; }
 
-  h2 {
+  h1{
     color: $colorppal2;
     font-family: 'Zen Antique', serif;
     text-align: center;
-    font-size: 3rem; }
+    font-size: $fontsizegenerico*3;
+  }
+
+  h2 {
+    @extend h1;
+    font-size: 2.5rem; }
   
   h3 {
-    color: $colorppal2;
-    font-family: 'Zen Antique', serif;
-    text-align: center;
-    font-size: 2rem; }
+    @extend h1;
+    font-size: $fontsizegenerico*2; }
   
   ul li {
     color: $colorppal3; }
