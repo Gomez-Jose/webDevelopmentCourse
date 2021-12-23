@@ -1,11 +1,13 @@
 .card {
-    height: max-content;
     overflow: hidden;
+    max-width: 100vw;
+    max-height: fit-content;
     &__text {
-        text-align: left; }
-    &__title{
+        text-align: left;
         color: $colorppal3;
-        text-align:left;
+     }
+    &__title{
+        @extend .card__text;
     }
 }
   

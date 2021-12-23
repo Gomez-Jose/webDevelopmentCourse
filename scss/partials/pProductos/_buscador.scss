@@ -10,7 +10,7 @@
         text-align: center; 
     }
     .tituloCategoria {
-        text-align: center; 
+        @extend .tituloBuscador;
     }
     .buscador_categorias {
         flex-direction: column;

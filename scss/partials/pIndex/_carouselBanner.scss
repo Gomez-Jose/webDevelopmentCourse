@@ -9,8 +9,7 @@
     width: 100%;
     height: auto;
     #carousel-item--img {
-      width: 100%;
-      height: auto;
-      margin: auto; }
+      @extend #carouselBanner;
+      height: auto; }
   }
 }

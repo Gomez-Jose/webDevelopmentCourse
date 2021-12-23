@@ -1,5 +1,13 @@
 @import "../vars";
 
+@mixin sizes($font){
+    font-size: $font;
+    width: 400px;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+}
+
 table {
     width: 80%;
     margin-bottom: 20px;
@@ -7,16 +15,10 @@ table {
     margin-right: auto;
     & tr {
         & td{
-        width: 400px;
-        margin: auto;
-        font-size: $fontsizegenerico;
-        padding: 20px;
-        text-align: center;}
+        @include sizes($fontsizegenerico);
         & th {
-            width: 400px;
-            margin: auto;
-            font-size: 1.2rem;
-            padding: 20px;
-            text-align: center; }
+            @include sizes(1.2rem);
+        }
+        }   
     }
 }
