@@ -16,8 +16,9 @@
   p {
     color: $colorppal3;
     text-align: center;
-    font-size: $fontsizegenerico;
-    line-height: 1.5; }
+    font-size: calc(15px + 0.5vw);
+    line-height: calc(21px + 0.6vw); 
+  }
   
   strong {
     color: $colorppal2; }
@@ -26,16 +27,37 @@
     color: $colorppal2;
     font-family: 'Zen Antique', serif;
     text-align: center;
-    font-size: $fontsizegenerico*3;
+    font-size: 1.6em;
+    line-height: calc(30px + 1vw);
   }
 
   h2 {
     @extend h1;
-    font-size: 2.5rem; }
+    font-size: 1.4em;
+    line-height: calc(26px + 1vw); }
   
   h3 {
     @extend h1;
-    font-size: $fontsizegenerico*2; }
+    font-size: 1.2em;
+    line-height: calc(24px + 1vw); }
+
+  h4 {
+    @extend h1;
+    font-size: 1em;
+    line-height: calc(22px + 1vw); 
+  }
+
+  h5 {
+    @extend h1;
+    font-size: 0.8em;
+    line-height: calc(20px + 1vw); 
+    color: $colorppal3; }
+  
+  h6 {
+    @extend h5;
+    font-size: 0.6em;
+    line-height: calc(18px + 1vw);
+  }
   
   ul li {
     color: $colorppal3; }
@@ -47,9 +69,3 @@
   hr {
     color: $colorppal3;
     opacity: 1; }
-
-  h5 {
-    color: $colorppal3; }
-
-  h6 {
-    color: $colorppal3; }

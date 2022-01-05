@@ -9,11 +9,15 @@
     /* Index */
     .main__video {
       flex-direction: column;
-      gap: 0; }
+      gap: 0;
+      min-width: 80%;
+     }
     #videoYT {
       max-width: 100%; }
     .main__txt {
-      margin-right: 0px; }
+      margin-right: 0px;
+      max-width: 100%;
+    }
     /* Productos */
     .containerItemProducto {
       flex-direction: column; }
