@@ -7,19 +7,18 @@
 @mixin prop($dire){
     display: flex;
     flex-direction: $dire;
-    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between; 
 }
 
 .contenedorProductos {
-    width: 100%;
+    max-width: 1024px;
     @include prop(column);
     .containerItemProducto {
         @include prop(row);
         .producto__img {
-            max-width: 300px;
-            max-height: 300px;
+            width: 250px;
+            height: 250px;
             margin-top: 10px;
             padding: 14px; }
     }
