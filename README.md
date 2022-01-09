@@ -6,6 +6,7 @@ This is my very first development project ever. Made for [**Coderhouse's Web Dev
 Server link: https://coleccionesvargas.000webhostapp.com/
 
 Github repo link: https://gomez-jose.github.io/webDevelopmentCourse/
+
 ---
 
 ## About the Project
