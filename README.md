@@ -3,10 +3,18 @@
 This is my very first development project ever. Made for [**Coderhouse's Web Development Course**](https://www.coderhouse.com/online/desarrollo-web-online) in 2021.
 
 ## Check out the website!
+<<<<<<< HEAD
 
 Server link: https://coleccionesvargas.000webhostapp.com/
 
 Github repo link: https://gomez-jose.github.io/webDevelopmentCourse/
+=======
+Server link:
+https://coleccionesvargas.000webhostapp.com/
+
+Github repo link:
+https://gomez-jose.github.io/webDevelopmentCourse/
+>>>>>>> 994a91d2f4dd33ca45612f69e3bdf3a824df88b3
 
 ---
 
