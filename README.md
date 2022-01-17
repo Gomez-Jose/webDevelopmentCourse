@@ -3,7 +3,7 @@
 This is my very first development project ever. Made for [**Coderhouse's Web Development Course**](https://www.coderhouse.com/online/desarrollo-web-online) in 2021.
 
 ## Check out the website!
-Server link: https://coleccionesvargas.000webhostapp.com/
+Server link: https://web-development-course.vercel.app/
 
 Github repo link: https://gomez-jose.github.io/webDevelopmentCourse/
 
