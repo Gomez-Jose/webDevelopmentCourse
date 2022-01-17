@@ -8,10 +8,8 @@
                               "atencion_al_cliente"
                               "seguinos";
         justify-content: center;
-        height: 90%; 
-        padding-left: unset;
-      }
-  
+        height: 90%; }
+        
       /*  Copyright */
       .containerCopyright {
         height: 9%; 
@@ -20,6 +18,10 @@
         padding-top: auto;
         text-align: center; }
         }
+    }
+
+    ol,ul {
+      padding-left: 0;
     }
 }
   

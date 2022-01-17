@@ -1,9 +1,9 @@
 @import "../vars";
 
-#sectFAQS article {
-    h2 {
+#sectFAQS__articulo {
+    &__titulo {
         margin: $margintitulos 0; }
   
-    h3 {
+    &__titulo--subtitulo {
         margin: $margintitulos 0; }
     }

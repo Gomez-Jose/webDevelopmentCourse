@@ -46,7 +46,7 @@ aside {
   grid-area: aside;
 }
 
-p, .card .container-fluid__text {
+p {
   color: white;
   text-align: center;
   font-size: calc(15px + 0.5vw);
@@ -57,7 +57,7 @@ strong {
   color: #15AFC6;
 }
 
-h1, h2, h3, h4, h5, h6, .card .container-fluid__title {
+h1, h2, h3, h4, h5, h6 {
   color: #15AFC6;
   font-family: 'Zen Antique', serif;
   text-align: center;
@@ -237,6 +237,10 @@ header .navbar-collapse .nav-link {
 
 .subscripcion__txt--titulo {
   color: white;
+}
+
+.subscripcion__forms--btn {
+  margin-right: 2em;
 }
 
 /* Nav Bot Side */
@@ -537,12 +541,12 @@ footer .containerCopyright .copyright__txt {
           flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
 }
 
 .containerGallery__col .imgGenerica {
@@ -584,7 +588,7 @@ aside {
   grid-area: aside;
 }
 
-p, .card .container-fluid__text {
+p {
   color: white;
   text-align: center;
   font-size: calc(15px + 0.5vw);
@@ -595,7 +599,7 @@ strong {
   color: #15AFC6;
 }
 
-h1, h2, h3, h4, h5, h6, .card .container-fluid__title {
+h1, h2, h3, h4, h5, h6 {
   color: #15AFC6;
   font-family: 'Zen Antique', serif;
   text-align: center;
@@ -644,19 +648,25 @@ hr {
 }
 
 .card {
-  width: 100vw;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  overflow: hidden;
+  max-width: 100vw;
 }
 
 .card__img {
-  height: 800px;
+  height: 1200px;
 }
 
-.card .container-fluid__text {
+.card__text {
   text-align: left;
+  word-wrap: break-word;
 }
 
-.card .container-fluid__title {
+.card__title {
   color: white;
+  text-align: left;
 }
 
 /* Contacto */
@@ -695,8 +705,13 @@ hr {
   width: 100%;
 }
 
-#sectContacto .formsContacto #mensaje {
-  max-width: 95vw;
+#sectContacto .formsContacto fieldset #mensaje {
+  max-width: 85vw;
+}
+
+#sectContacto .formsContacto fieldset label {
+  margin: 1em;
+  display: block;
 }
 
 .containerMap {
@@ -709,11 +724,11 @@ hr {
   margin-left: auto;
 }
 
-#sectFAQS article h2 {
+#sectFAQS__articulo__titulo {
   margin: 2rem 0;
 }
 
-#sectFAQS article h3 {
+#sectFAQS__articulo__titulo--subtitulo {
   margin: 2rem 0;
 }
 
@@ -740,7 +755,7 @@ table tr td th {
   text-align: center;
 }
 
-#sectPriv {
+#sectPriv h2 {
   margin: 2rem 0;
 }
 
@@ -775,7 +790,6 @@ table tr td th {
         -ms-flex-pack: center;
             justify-content: center;
     height: 90%;
-    padding-left: unset;
   }
   footer .containerCopyright {
     height: 9%;
@@ -785,12 +799,23 @@ table tr td th {
     padding-top: auto;
     text-align: center;
   }
+  ol, ul {
+    padding-left: 0;
+  }
 }
 
 /* Media Querie navbar Bot */
 @media (max-width: 1205px) {
   .navbarBot__lista--sublista {
     margin: auto;
+  }
+  /* Subscripcion btn*/
+  .subscripcion__forms--btn {
+    margin-right: 0;
+  }
+  /* Subscripcion email*/
+  .subscripcion__forms--email {
+    width: 550px;
   }
 }
 
@@ -813,13 +838,14 @@ table tr td th {
         -ms-flex-pack: center;
             justify-content: center;
   }
-  .card__text {
-    line-height: 1.2;
-    font-size: 0.8rem;
+  .subscripcion {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
-  .card__title {
-    line-height: 1.2;
-    font-size: 1.8rem;
+  .subscripcion__forms--email {
+    min-width: 80vw;
   }
 }
 
@@ -875,6 +901,11 @@ table tr td th {
   }
 }
 
+/* Historia */
+.card__img {
+  height: 80vh;
+}
+
 /* Media Querie for forms e-mail px*/
 @media (max-width: 601px) {
   .subscripcion__forms--email {
@@ -890,13 +921,11 @@ table tr td th {
     width: 180px;
     height: 180px;
   }
-  .card__text {
-    line-height: 1;
-    font-size: 0.6rem;
-  }
-  .card__title {
-    line-height: 1;
-    font-size: 1.2rem;
+}
+
+@media (max-width: 489px) {
+  .subscripcion__forms--email {
+    min-width: 70vw;
   }
 }
 
@@ -915,13 +944,6 @@ table tr td th {
   .imgGenerica {
     width: 250px;
     height: 200px;
-  }
-}
-
-/* Media Querie for card image when the text overboard*/
-@media (max-width: 388px) {
-  .card__img {
-    height: 1000px;
   }
 }
 /*# sourceMappingURL=main.css.map */

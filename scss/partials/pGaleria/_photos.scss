@@ -16,7 +16,11 @@
     width: 100%;
     @include prop(column);
     &__col {
-        @include prop(row);
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
         .imgGenerica {
             max-width: 500px;
             max-height: 500px;

@@ -7,15 +7,11 @@
       justify-content: center;
     }
 
-    .card__text{
-      line-height: 1.2;
-      font-size: 0.8rem;
-    }
+    .subscripcion{
+      flex-direction: column;
 
-    .card__title{
-      line-height: 1.2;
-      font-size: 1.8rem;
+      &__forms--email {
+        min-width: 80vw; }
     }
-
   }
   

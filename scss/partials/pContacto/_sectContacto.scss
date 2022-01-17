@@ -10,8 +10,14 @@
         margin-right: auto;
         padding: $padgenerico 0;
         width: 100%;
-        #mensaje {
-            max-width: 95vw; } 
+        fieldset{
+            #mensaje {
+                max-width: 85vw; }
+            label{
+                margin: 1em;
+                display:block;
+            }
+        }
     }
 }
 
