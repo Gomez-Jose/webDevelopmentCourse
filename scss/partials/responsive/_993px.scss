@@ -6,5 +6,12 @@
     .contenedorProductos .containerItemProducto {
       justify-content: center;
     }
+
+    .subscripcion{
+      flex-direction: column;
+
+      &__forms--email {
+        min-width: 80vw; }
+    }
   }
   

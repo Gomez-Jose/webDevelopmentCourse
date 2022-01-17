@@ -4,5 +4,11 @@
       display: none; }
     .imgGenerica {
       width: 250px;
-      height: 200px; } }
-  
+      height: 200px; }
+    
+    .card{
+      &__img{
+        height: 100vh;
+      }
+    }
+  }

@@ -1,5 +1,14 @@
   /* Media Querie navbar Bot */
   @media (max-width: 1205px) {
     .navbarBot__lista--sublista {
-      margin: auto; } }
+      margin: auto; }
+    
+    /* Subscripcion btn*/
+    .subscripcion__forms--btn {
+      margin-right: 0;
+    }
+    /* Subscripcion email*/
+    .subscripcion__forms--email {
+      width: 550px; }
+    }
   

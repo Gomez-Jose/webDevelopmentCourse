@@ -224,6 +224,10 @@ header .navbar-collapse .nav-link {
   color: white;
 }
 
+.subscripcion__forms--btn {
+  margin-right: 2em;
+}
+
 /* Nav Bot Side */
 footer {
   background-color: black;
@@ -530,9 +534,9 @@ footer .containerCopyright .copyright__txt {
           flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -561,10 +565,16 @@ footer .containerCopyright .copyright__txt {
   height: -moz-max-content;
   height: max-content;
   overflow: hidden;
+  max-width: 100vw;
+}
+
+.card__img {
+  height: 1200px;
 }
 
 .card__text {
   text-align: left;
+  word-wrap: break-word;
 }
 
 .card__title {
@@ -608,8 +618,13 @@ footer .containerCopyright .copyright__txt {
   width: 100%;
 }
 
-#sectContacto .formsContacto #mensaje {
-  max-width: 95vw;
+#sectContacto .formsContacto fieldset #mensaje {
+  max-width: 85vw;
+}
+
+#sectContacto .formsContacto fieldset label {
+  margin: 1em;
+  display: block;
 }
 
 .containerMap {
@@ -622,11 +637,11 @@ footer .containerCopyright .copyright__txt {
   margin-left: auto;
 }
 
-#sectFAQS article h2 {
+#sectFAQS__articulo__titulo {
   margin: 2rem 0;
 }
 
-#sectFAQS article h3 {
+#sectFAQS__articulo__titulo--subtitulo {
   margin: 2rem 0;
 }
 
@@ -653,7 +668,7 @@ table tr th {
   text-align: center;
 }
 
-#sectPriv {
+#sectPriv h2 {
   margin: 2rem 0;
 }
 
@@ -690,12 +705,23 @@ table tr th {
     padding-top: auto;
     text-align: center;
   }
+  ol, ul {
+    padding-left: 0;
+  }
 }
 
 /* Media Querie navbar Bot */
 @media (max-width: 1205px) {
   .navbarBot__lista--sublista {
     margin: auto;
+  }
+  /* Subscripcion btn*/
+  .subscripcion__forms--btn {
+    margin-right: 0;
+  }
+  /* Subscripcion email*/
+  .subscripcion__forms--email {
+    width: 550px;
   }
 }
 
@@ -717,6 +743,15 @@ table tr th {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+  .subscripcion {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .subscripcion__forms--email {
+    min-width: 80vw;
   }
 }
 
@@ -770,6 +805,11 @@ table tr th {
   }
 }
 
+/* Historia */
+.card__img {
+  height: 80vh;
+}
+
 /* Media Querie for forms e-mail px*/
 @media (max-width: 601px) {
   .subscripcion__forms--email {
@@ -787,6 +827,12 @@ table tr th {
   }
 }
 
+@media (max-width: 489px) {
+  .subscripcion__forms--email {
+    min-width: 70vw;
+  }
+}
+
 /* Media Querie for side nav bar in products when screen is too small px*/
 @media (max-width: 425px) {
   #contentPlaceHolderIzquierda {
@@ -795,6 +841,9 @@ table tr th {
   .imgGenerica {
     width: 250px;
     height: 200px;
+  }
+  .card__img {
+    height: 100vh;
   }
 }
 
